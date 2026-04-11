@@ -404,7 +404,7 @@ function mkTrack(id,name,type,seqLen,euSteps,pulses,rotate,ch,note,vel,extra){
 const TRACKS=[
   mkTrack(0,'KICK 909','kick',16,16,4,0,10,36,100,{kick:{pitchStart:180,pitchEnd:40,sweepTime:0.08,decay:0.38,drive:0.5,punch:true,lpCut:18000,lpQ:0.7}}),
   mkTrack(1,'HIHAT NOISE','hihat',16,16,8,0,10,42,80,{hihat:{color:0,tone:8000,decay:0.09,openDecay:0.4,open:false}}),
-  mkTrack(2,'MONO FM','fm',16,16,3,2,1,60,90,{synth:{fmRatio:2,fmIndex:3,decay:0.4,release:0.2,scale:'minor',rootNote:60,lpCut:4000,lpQ:2,lpEnvAmt:3000,lpDec:0.3,lpRel:0.4},pitchCursor:64,melodyMode:'cursor',phraseBuffer:[],phraseCapture:false,captureSize:2}),
+  mkTrack(2,'MONO FM','fm',16,16,3,2,1,60,90,{synth:{fmRatio:2,fmIndex:3,decay:0.4,release:0.2,scale:'minor',rootNote:60},pitchCursor:64,melodyMode:'cursor',phraseBuffer:[],phraseCapture:false,captureSize:2}),
   mkTrack(3,'POLY FM','poly',16,16,0,0,2,60,85,{notation:'c3 ~ e3 ~ g3 ~ b3 ~',parsed:[],poly:{fmRatio:1.5,fmIndex:4,detune:4,attack:0.008,decay:0.55,release:0.3,lpCut:800,lpQ:3.5,lpEnvAmt:2400,lpAtk:0.005,lpDec:0.3,porta:0,voices:3,unisonMode:true,chordIntervals:[0,7,12]},lastFreq:0})
 ];
 
@@ -518,27 +518,15 @@ const FXS=[
 ];
 let masterLv=0.85;
 
-// Synthetic reverb impulse response
-function makeIR(ctx,size){
-  const len=Math.floor(ctx.sampleRate*(0.15+size*2.5));
+// Build convolver IR for reverb (synthetic impulse)
+function makeIR(ctx, size){
+  const len=Math.floor(ctx.sampleRate*(0.1+size*3)); // 0.1s to 3.1s
   const buf=ctx.createBuffer(2,len,ctx.sampleRate);
   for(let c=0;c<2;c++){
     const d=buf.getChannelData(c);
-    for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,1.2+size*3);
+    for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,1.5+size*2);
   }
   return buf;
-}
-
-// Bitcrusher curve: quantize signal to N bits using WaveShaper
-// Lower bits = more crush. At 16 bits = effectively transparent.
-function makeBitCurve(bits){
-  const n=256,curve=new Float32Array(n);
-  const steps=Math.pow(2,Math.max(1,bits));
-  for(let i=0;i<n;i++){
-    const x=(i*2)/(n-1)-1; // -1 to 1
-    curve[i]=Math.round(x*steps/2)/(steps/2);
-  }
-  return curve;
 }
 
 function initBuses(){
@@ -549,24 +537,36 @@ function initBuses(){
     const hp=ctx.createBiquadFilter();hp.type='highpass';hp.frequency.value=20;hp.Q.value=0.7;
     const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=20000;lp.Q.value=0.7;
 
-    // Bitcrusher — WaveShaper (no ScriptProcessor, no deprecated APIs)
-    const bitWS=ctx.createWaveShaper();
-    bitWS.curve=makeBitCurve(16); // start transparent
-    bitWS.oversample='none';
-    const bitBypass=ctx.createGain();bitBypass.gain.value=1; // passthrough when off
-
     // Reverb: dry/wet parallel
-    const revSend=ctx.createGain();revSend.gain.value=0;
+    const revSend=ctx.createGain();revSend.gain.value=0; // wet amount
     const revConv=ctx.createConvolver();revConv.buffer=makeIR(ctx,FXS[i].revSize);
     const revReturn=ctx.createGain();revReturn.gain.value=0.7;
-    revSend.connect(revConv);revConv.connect(revReturn);revReturn.connect(masterG);
+    revSend.connect(revConv);revConv.connect(revReturn);
 
-    // Chain: g → hp → lp → bitWS → masterG + revSend → masterG
-    g.connect(hp);hp.connect(lp);lp.connect(bitWS);
-    bitWS.connect(masterG);
-    bitWS.connect(revSend);
+    // Bitcrusher via ScriptProcessor (small buffer for low latency)
+    const bitNode=ctx.createScriptProcessor(256,1,1);
+    const fxState={depth:FXS[i].bitDepth,on:false};
+    bitNode._fxState=fxState;
+    bitNode.onaudioprocess=function(e){
+      const inp=e.inputBuffer.getChannelData(0);
+      const out=e.outputBuffer.getChannelData(0);
+      if(fxState.on){
+        const step=2/Math.pow(2,fxState.depth);
+        for(let j=0;j<inp.length;j++) out[j]=step*Math.floor(inp[j]/step+0.5);
+      } else {
+        out.set(inp);
+      }
+    };
 
-    buses.push({g,hp,lp,bitWS,revSend,revConv,revReturn});
+    // Chain: g → hp → lp → bitNode → dry out + revSend → master
+    const dryOut=ctx.createGain();dryOut.gain.value=1;
+    lp.connect(bitNode);
+    bitNode.connect(dryOut);
+    dryOut.connect(masterG);
+    bitNode.connect(revSend); // send to reverb
+    revReturn.connect(masterG);
+
+    buses.push({g,hp,lp,revSend,revConv,revReturn,bitNode,fxState,dryOut});
   }
 }
 function bus(i){initBuses();return buses[i].g;}
@@ -588,12 +588,12 @@ function setRevSize(i,v){
 }
 function setBitDepth(i,v){
   FXS[i].bitDepth=Math.round(v);
-  if(buses[i]&&FXS[i].bitOn) buses[i].bitWS.curve=makeBitCurve(Math.round(v));
+  if(buses[i]) buses[i].fxState.depth=Math.round(v);
   upd('mxbd'+i,Math.round(v)+'bit');
 }
 function toggleBit(i){
   FXS[i].bitOn=!FXS[i].bitOn;
-  if(buses[i]) buses[i].bitWS.curve=makeBitCurve(FXS[i].bitOn?FXS[i].bitDepth:16);
+  if(buses[i]) buses[i].fxState.on=FXS[i].bitOn;
   const btn=document.getElementById('mxbt'+i);
   if(btn) btn.className='btn'+(FXS[i].bitOn?' on':'');
 }
@@ -637,30 +637,20 @@ function trigHihat(time,vel,h){
   }
 }
 
-function trigFM(time,note,vel,ratio,index,decay,release,busIdx,fp){
+function trigFM(time,note,vel,ratio,index,decay,release,busIdx){
   const ctx=AC(),freq=440*Math.pow(2,(note-69)/12);
   release=release??0.15;
   const car=ctx.createOscillator(),mod=ctx.createOscillator(),mg=ctx.createGain(),amp=ctx.createGain();
   car.type=mod.type='sine';car.frequency.value=freq;mod.frequency.value=freq*ratio;mg.gain.value=freq*index;
+  // Moog-style: attack → peak → decay to sustain (40%) → release tail
   const peak=vel*.45,sustain=peak*.4;
   amp.gain.setValueAtTime(0,time);
-  amp.gain.linearRampToValueAtTime(peak,time+.006);
-  amp.gain.exponentialRampToValueAtTime(Math.max(sustain,.001),time+.006+decay);
+  amp.gain.linearRampToValueAtTime(peak,time+.006);          // attack
+  amp.gain.exponentialRampToValueAtTime(Math.max(sustain,.001),time+.006+decay); // decay to sustain
   amp.gain.setValueAtTime(Math.max(sustain,.001),time+.006+decay);
-  amp.gain.exponentialRampToValueAtTime(.001,time+.006+decay+release);
-  // Filter with envelope (optional — pass fp={lpCut,lpQ,lpEnvAmt,lpDec,lpRel})
-  let out=amp;
-  if(fp&&fp.lpEnvAmt>0){
-    const filt=ctx.createBiquadFilter();filt.type='lowpass';filt.Q.value=fp.lpQ??1;
-    const base=fp.lpCut??18000,envPk=Math.min(base+(fp.lpEnvAmt??0),18000);
-    filt.frequency.setValueAtTime(base,time);
-    filt.frequency.linearRampToValueAtTime(envPk,time+.008);
-    filt.frequency.exponentialRampToValueAtTime(Math.max(base,20),time+.008+(fp.lpDec??0.3));
-    filt.frequency.exponentialRampToValueAtTime(Math.max(20,base*.15),time+.008+(fp.lpDec??0.3)+(fp.lpRel??0.4));
-    amp.connect(filt);out=filt;
-  }
-  mod.connect(mg);mg.connect(car.frequency);car.connect(amp);out.connect(bus(busIdx??2));
-  const total=.006+decay+release+.05;
+  amp.gain.exponentialRampToValueAtTime(.001,time+.006+decay+release);   // release
+  mod.connect(mg);mg.connect(car.frequency);car.connect(amp);amp.connect(bus(busIdx??2));
+  const total=.006+decay+release+.02;
   mod.start(time);car.start(time);mod.stop(time+total);car.stop(time+total);
 }
 
@@ -832,7 +822,7 @@ function dispatch(t,time,si,euIdx,doBurstHere,sd){
       recordPhrase(t,note);
     }
     if(t.lastNote>=0)noteOff(t.midi.ch,t.lastNote);
-    trigFM(time,note,vel,syn.fmRatio,syn.fmIndex,syn.decay,syn.release??0.2,2,syn);
+    trigFM(time,note,vel,syn.fmRatio,syn.fmIndex,syn.decay,syn.release??0.2,2);
     noteOn(t.midi.ch,note,t.midi.vel,(syn.decay+(syn.release??0.2))*.9);t.lastNote=note;accent(t.id);
     if(doBurstHere)doBurst(t,time,euIdx,vel,note,sd);
   }else if(t.type==='poly'){
@@ -984,21 +974,16 @@ function buildFMrow(t){
   h+='</select></div>';
   h+='<div class="p-grp"><div class="p-lbl">ROOT</div><input type="number" min="24" max="96" value="'+s.rootNote+'" style="width:40px" oninput="updateFM(\'rootNote\',parseInt(this.value))"></div>';
   h+='</div>';
-  // Filter row
-  h+='<div class="syn-row">';
-  h+=synSl('fmlc','LP CUT',20,12000,s.lpCut??4000,10,'updateFM','lpCut',0);
-  h+=synSl('fmlq','LP Q',0.1,12,s.lpQ??2,0.1,'updateFM','lpQ',1);
-  h+=synSl('fmea','ENV AMT',0,10000,s.lpEnvAmt??3000,50,'updateFM','lpEnvAmt',0);
-  h+=synSl('fmld','F.DEC',0.01,3,s.lpDec??0.3,0.01,'updateFM','lpDec',2);
-  h+=synSl('fmlr','F.REL',0.01,3,s.lpRel??0.4,0.01,'updateFM','lpRel',2);
-  h+='</div>';
   // Melody mode row
   h+='<div class="p-row" style="margin-top:4px;align-items:center;gap:8px">';
   h+='<div class="p-grp"><div class="p-lbl">MELODY MODE</div><div style="display:flex;gap:3px;margin-top:2px">';
   h+='<button class="btn'+(mode==='cursor'?' on':'')+'" id="fmModeCursor" onclick="setFMMode(\'cursor\')" style="padding:3px 7px;font-size:8px">CURSOR</button>';
   h+='<button class="btn'+(mode==='random'?' on':'')+'" id="fmModeRandom" onclick="setFMMode(\'random\')" style="padding:3px 7px;font-size:8px">RANDOM</button>';
   h+='</div></div>';
-  if(mode==='cursor') h+=psl(2,'pitchCursor','PITCH CUR ↕',0,127,pc,120);
+  if(mode==='cursor'){
+    h+=psl(2,'pitchCursor','PITCH CUR ↕',0,127,pc,120);
+  }
+  // Capture buffer (works in both modes)
   h+='<div class="p-grp"><div class="p-lbl">BUF SIZE</div><select class="ratio-sel" id="capSize" onchange="TRACKS[2].captureSize=parseInt(this.value)">';
   [1,2,4,8].forEach(v=>{h+='<option value="'+v+'"'+(v===(t.captureSize??2)?' selected':'')+'>'+v+' bar</option>';});
   h+='</select></div>';
