@@ -407,6 +407,13 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
   .bus{display:block;}
   .busrack{display:grid;grid-template-columns:auto auto 1fr;}
 }
+
+.ch-head{display:flex;gap:8px;align-items:stretch;justify-content:center;margin-top:8px;padding-top:8px;border-top:1px solid #23211d;}
+.ch-knobs{display:flex;flex-direction:column;gap:8px;align-items:center;}
+.kg.big .kn{width:48px;height:48px;}
+.mtr.ch{height:auto;min-height:110px;width:6px;align-self:stretch;}
+.ch-out{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:8px;}
+.ch-out .seg2 .btn{padding:4px 7px;font-size:9.5px;}
 </style>
 </head>
 <body>
@@ -1628,6 +1635,7 @@ function buildTrack(t){
   h+='<svg class="ring" id="ring'+i+'" viewBox="0 0 100 100" style="color:'+c+'"></svg>';
   h+='<div class="cyc">CYC <b id="cyc'+i+'">0</b></div>';
   h+=buildSide(t);
+  h+=buildChannelHead(t);
   h+='<div class="ms-btns"><button class="ms-btn" id="mb'+i+'" onclick="toggleMute('+i+')">M</button>';
   h+='<button class="ms-btn" id="sb'+i+'" onclick="toggleSolo('+i+')">S</button></div>';
   h+='<div class="ms-btns" style="margin-top:3px">';
@@ -2823,11 +2831,6 @@ function buildMixStrip(t){
   const fHP=slToFreqLog(ms.hp,20,10000),fLP=slToFreqLog(ms.lp,200,20000);
   const pan=ms.pan||0,panD=Math.abs(pan)<0.02?'C':(pan<0?'L':'R')+Math.round(Math.abs(pan)*100);
   let h='<div class="t-mix">';
-  h+='<div class="mx-sec"><div class="mx-h">CANAL</div><div class="mx-row">';
-  h+='<div class="mtr" id="mtr'+i+'"><i></i></div>';
-  h+=kn('tmv_lv_'+i,'LEVEL',0,1,ms.lv,0.01,'setMxLv('+i+',+this.value)',_pct(ms.lv),'',MXS_DEF[i].lv);
-  h+=kn('tmv_pan_'+i,'PAN',-1,1,pan,0.01,'setMxPan('+i+',+this.value)',panD,'',0);
-  h+='</div></div>';
   h+='<div class="mx-sec"><div class="mx-h">FILTRO</div><div class="mx-row">';
   h+=kn('tmv_hp_'+i,'HP',0,1,ms.hp,0.001,'setMxHP('+i+',+this.value)',_fmtHz(fHP),'',0);
   h+=kn('tmv_lp_'+i,'LP',0,1,ms.lp,0.001,'setMxLP('+i+',+this.value)',_fmtHz(fLP),'',1);
@@ -2841,13 +2844,25 @@ function buildMixStrip(t){
   h+='<div class="mx-sec"><div class="mx-h">CRUSH <button class="btn mini'+(fx.bitOn?' on':'')+'" id="tbt'+i+'" onclick="toggleBit('+i+')">ON</button></div><div class="mx-row">';
   h+=kn('tmv_bd_'+i,'BITS',1,16,fx.bitDepth,1,'setBitDepth('+i+',+this.value)',fx.bitDepth+'bit','',16);
   h+='</div></div>';
-  h+='<div class="mx-sec"><div class="mx-h">SALIDA</div><div class="mx-row out">';
-  h+=seg2('mxout'+i,ms.out||'M','setMxOut.bind(null,'+i+')','M','B','MASTER','COMP bus (sidechain)');
-  h+='</div></div>';
   h+='</div>';
   return h;
 }
 const MXS_DEF=MXS.map(m=>({...m}));
+// cabecera de canal (columna izquierda de la pista): medidor, LEVEL, PAN y salida, como una consola
+function buildChannelHead(t){
+  const i=t.id,ms=MXS[i];
+  const pan=ms.pan||0,panD=Math.abs(pan)<0.02?'C':(pan<0?'L':'R')+Math.round(Math.abs(pan)*100);
+  let h='<div class="ch-head">';
+  h+='<div class="ch-knobs">';
+  h+=kn('tmv_lv_'+i,'LEVEL',0,1,ms.lv,0.01,'setMxLv('+i+',+this.value)',_pct(ms.lv),'big',MXS_DEF[i].lv);
+  h+=kn('tmv_pan_'+i,'PAN',-1,1,pan,0.01,'setMxPan('+i+',+this.value)',panD,'',0);
+  h+='</div>';
+  h+='<div class="mtr ch" id="mtr'+i+'"><i></i></div>';
+  h+='</div>';
+  h+='<div class="ch-out"><div class="kg-l">SALIDA</div>'+seg2('mxout'+i,ms.out||'M','setMxOut.bind(null,'+i+')','M','B','MASTER','COMP bus (sidechain)')+'</div>';
+  return h;
+}
+
 
 // ── BUS: retornos, COMP BUS y MASTER ──────────────────────────
 function buildMixerUI(){const p=document.getElementById('mixPanel');if(p){p.innerHTML='';p.style.display='none';}}
