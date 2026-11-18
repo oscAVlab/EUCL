@@ -423,103 +423,6 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
 .mtr.ch{height:auto;min-height:110px;width:6px;align-self:stretch;}
 .ch-out{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:8px;}
 .ch-out .seg2 .btn{padding:4px 7px;font-size:9.5px;}
-
-/* ══ v2.3 · pestañas: todo cabe en una ventana ══ */
-html,body{height:100%;}
-body{display:flex;flex-direction:column;overflow:hidden;}
-.hdr{position:relative;flex:none;}
-.app{flex:1;min-height:0;display:flex;flex-direction:column;width:100%;max-width:none;}
-.pre-main{flex:none;}
-.footer{flex:none;}
-.rack-h{white-space:nowrap;}
-.tabs{flex:none;display:flex;align-items:stretch;gap:0;margin:10px 16px 0;border-bottom:1px solid #2a2823;}
-.tab{background:none;border:1px solid transparent;border-bottom:none;color:var(--text-dim);font-family:var(--cond);font-size:12.5px;font-weight:600;letter-spacing:.16em;padding:8px 16px 7px;cursor:pointer;display:flex;align-items:baseline;gap:8px;margin-bottom:-1px;}
-.tab b{font-family:var(--mono);font-size:10px;font-weight:400;color:var(--text-dim);opacity:.6;}
-.tab span{font-family:var(--mono);font-size:9.5px;font-weight:400;letter-spacing:.04em;color:var(--text-dim);opacity:.65;text-transform:none;}
-.tab:hover{color:var(--text);}
-.tab.on{color:var(--paper);background:#151412;border-color:#2a2823;border-top:2px solid var(--turq);}
-.tab.on b{color:var(--turq);opacity:1;}
-.tab-mutes{margin-left:auto;display:flex;gap:4px;align-items:center;padding-bottom:4px;}
-.tab-mutes .tm{border-left:2px solid var(--kc);}
-.views{flex:1;min-height:0;position:relative;}
-.view{display:none;position:absolute;inset:0;overflow:auto;padding:12px 16px 14px;}
-.view.on{display:block;}
-.card,.strip{background:var(--panel);border:1px solid #2a2823;border-radius:3px;min-width:0;}
-.card{border-top:2px solid var(--kc);}
-/* SECUENCIADOR: 4 columnas que llenan el alto */
-.seq-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch;min-height:100%;}
-.seq-card{display:flex;flex-direction:column;}
-.seq-card .track-accent{display:none;}
-.seq-card .track-inner{display:flex;flex-direction:column;flex:1;}
-.seq-card .track-inner>div:last-child{flex:1;}
-.seq-card .t-hdr{border-right:none;border-bottom:1px solid #23211d;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;align-items:start;padding:10px 12px;}
-.seq-card .t-hdr .t-id,.seq-card .t-hdr .t-name{grid-column:1/-1;}
-.seq-card .t-hdr .t-id{font-size:14px;}
-.seq-card .t-hdr .ring{grid-row:span 4;width:clamp(120px,19vh,210px);max-width:none;margin:0;}
-.seq-card .ms-btns{margin-top:0;flex-wrap:wrap;}
-.seq-card .t-params{padding:10px 12px 12px;flex:1;justify-content:space-evenly;height:100%;}
-.seq-card .p-row{justify-content:flex-start;}
-/* INSTRUMENTOS: kick a lo ancho, debajo hihat · mono · poly */
-.inst-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto 1fr;grid-template-areas:"k h" "k p" "m p";gap:10px;align-items:stretch;min-height:100%;}
-.inst-card[data-track="0"]{grid-area:k;}.inst-card[data-track="1"]{grid-area:h;}.inst-card[data-track="2"]{grid-area:m;}.inst-card[data-track="3"]{grid-area:p;}
-.inst-card{display:flex;flex-direction:column;}
-.inst-card .card-b{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;gap:clamp(6px,1.4vh,18px);}
-.inst-card .syn-row{justify-content:flex-start;gap:clamp(8px,1.2vh,16px) clamp(10px,1.1vw,22px);}
-.inst-card .kn{width:clamp(32px,4.6vh,56px);height:clamp(32px,4.6vh,56px);}
-.inst-card .p-lbl{font-size:clamp(7.5px,.95vh,10px);}
-.inst-card .p-val{font-size:clamp(11px,1.3vh,14px);}
-.card-h{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid #23211d;font-family:var(--cond);letter-spacing:.16em;font-size:12px;color:var(--text-mid);}
-.card-h b{font-size:14px;letter-spacing:.2em;}
-.card-ms{margin-left:auto;display:flex;gap:4px;}
-.card-b{padding:10px 12px 12px;}
-.inst-card .syn-row{border:none;}
-/* MIXER: consola + rack de bus */
-.mix-view{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;}
-.console{display:grid;grid-template-columns:repeat(4,128px);gap:8px;}
-.strip{display:flex;flex-direction:column;align-items:stretch;padding-bottom:8px;}
-.strip-h{display:flex;align-items:baseline;gap:6px;padding:7px 9px;border-top:2px solid;border-bottom:1px solid #23211d;font-family:var(--cond);font-size:10.5px;letter-spacing:.12em;color:var(--text-mid);white-space:nowrap;overflow:hidden;}
-.strip-h b{font-size:13px;letter-spacing:.18em;}
-.strip .ch-head{margin-top:0;border-top:none;padding:10px 6px 4px;}
-.strip .ch-out{margin:4px 0 6px;}
-.strip .t-mix{flex-direction:column;background:none;border-top:none;}
-.strip .mx-sec{border-right:none;border-top:1px solid #23211d;padding:7px 6px;}
-.strip .mx-row{flex-wrap:wrap;justify-content:center;gap:4px 6px;}
-.strip-ms{display:flex;gap:4px;justify-content:center;margin-top:8px;}
-.mix-view{align-items:stretch;min-height:100%;}
-.mix-view .bus{padding:0;display:flex;flex-direction:column;}
-.mix-view #fxPanel{flex:1;display:flex;}
-.mix-view .busrack{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:1fr 1fr;gap:10px;flex:1;}
-.mix-view .busrack>.rack-sec:first-child{grid-column:1/-1;}
-.mix-view .rack-sec{display:flex;flex-direction:column;}
-.mix-view .rack-row{flex:1;align-items:stretch;}
-.mix-view .rack-row>.mod{display:flex;flex-direction:column;justify-content:center;flex:1;}
-.mix-view .busrack .kg .kn{width:clamp(40px,6.6vh,70px);height:clamp(40px,6.6vh,70px);}
-.mix-view .busrack .kg{min-width:clamp(44px,7vh,76px);}
-.console{align-items:stretch;}
-.strip{justify-content:space-between;}
-@media (max-height:960px){.strip .kg .kn{width:30px;height:30px;}.strip .kg.big .kn{width:42px;height:42px;}.strip .mx-sec{padding:5px 6px;}}
-/* cabecera en una línea */
-@media (max-width:1700px){.brand-app span:not(.ver){display:none;}.hdr .dev-sel{max-width:112px;}.hdr-mid{gap:10px;}.hdr{flex-wrap:nowrap;}.hdr-right{gap:6px;flex:none;}.hdr .led-grp{font-size:0;gap:3px;}}
-/* MOD */
-.mod-view{display:flex;flex-direction:column;gap:10px;}
-.mod-view .matrix-hdr-arr{display:none;}
-.mod-view .leg-body{display:flex;}
-/* tamaños intermedios */
-@media (max-width:1500px){ .tab span{display:none;} }
-@media (max-width:1180px){
-  .inst-grid{grid-template-areas:none;grid-template-rows:none;}.inst-card[data-track]{grid-area:auto;}
-  .seq-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
-  .mix-view{grid-template-columns:1fr;}
-  .inst-grid{grid-template-columns:1fr;}
-}
-@media (max-width:720px){
-  body{overflow:auto;display:block;}
-  .view{position:static;}
-  .seq-grid{grid-template-columns:1fr;}
-  .console{grid-template-columns:repeat(2,minmax(0,1fr));}
-  .tab{padding:8px 10px;letter-spacing:.08em;}
-}
-.dev-sel.warn{border-color:var(--amber);color:var(--amber);}
 </style>
 </head>
 <body>
@@ -527,7 +430,7 @@ body{display:flex;flex-direction:column;overflow:hidden;}
   <div class="brand">
     <img src="assets/logo-oscavlab.png" alt="osc[AV]lab" class="brand-logo">
     <div class="brand-sep"></div>
-    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.3</span></div>
+    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.2</span></div>
   </div>
   <div class="sig" aria-hidden="true">ž</div>
   <div class="hdr-mid">
@@ -600,18 +503,15 @@ body{display:flex;flex-direction:column;overflow:hidden;}
   <div class="preset-list-wrap" id="presetList" style="display:none"></div>
 </div>
 
-<nav class="tabs" id="tabs" role="tablist">
-  <button class="tab on" data-v="seq" onclick="setView('seq')">SECUENCIADOR<span>patrón · anillo · burst</span></button>
-  <button class="tab" data-v="inst" onclick="setView('inst')">INSTRUMENTOS<span>kick · hihat · mono · poly</span></button>
-  <button class="tab" data-v="mix" onclick="setView('mix')">MIXER<span>canales · retornos · comp · master</span></button>
-  <button class="tab" data-v="mod" onclick="setView('mod')">MOD<span>matriz CC · referencia</span></button>
-  <div class="tab-mutes" id="tabMutes"></div>
-</nav>
-<div class="views">
-  <section class="view on" data-v="seq"><div class="seq-grid" id="tracksCont"></div></section>
-  <section class="view" data-v="inst"><div class="inst-grid" id="instCont"></div></section>
-  <section class="view" data-v="mix"><div class="mix-view"><div class="console" id="mixCont"></div><div class="bus"><div class="mix-panel" id="mixPanel"></div><div id="fxPanel"></div></div></div></section>
-  <section class="view" data-v="mod"><div class="mod-view">
+<div class="main tracks" id="tracksCont"></div>
+
+<div class="main bus">
+  <div class="mix-panel" id="mixPanel"></div>
+  <div id="fxPanel"></div>
+</div>
+
+<!-- CC MATRIX collapsible -->
+<div class="main" style="padding-top:0">
   <div class="matrix-wrap">
     <div class="matrix-hdr" onclick="toggleMatrix()">
       <div class="matrix-hdr-lbl">
@@ -625,6 +525,9 @@ body{display:flex;flex-direction:column;overflow:hidden;}
     </div>
     <div class="matrix-body" id="matrixBody"></div>
   </div>
+</div>
+
+<div class="main" style="padding-top:0">
   <div class="leg-panel">
     <div class="leg-toggle" onclick="toggleLeg()">
       <span class="leg-arr" id="legArr">▶</span> REFERENCE
@@ -659,15 +562,15 @@ body{display:flex;flex-direction:column;overflow:hidden;}
       </div>
     </div>
   </div>
-  </div></section>
 </div>
+
 </div><!-- /app -->
 <div class="footer">
   <div class="fk"><span class="fkey">SPACE</span> play/stop</div>
   <div class="fk"><span class="fkey">↑↓</span> BPM</div>
   <div class="fk"><span class="fkey">SHIFT ↑↓</span> ±10</div>
   <div class="fk"><span class="fkey">1–4</span> mute T1–T4</div>
-  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.3 — xužu / osc[AV]lab</div>
+  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.2 — xužu / osc[AV]lab</div>
 </div>
 <script>
 'use strict';
@@ -1643,14 +1546,10 @@ function extLocate(pulse){ // Song Position Pointer → align every track
 
 // ── MIDI ────────────────────────────────────────────────────
 let midiAccess=null,midiOut=null,midiIn=null;
-function midiWarn(msg){
-  ['selOut','selIn','selIn2'].forEach(id=>{const e=document.getElementById(id);if(e){e.options[0].textContent='— '+msg+' —';e.title=msg+' — el navegador no da acceso a los dispositivos MIDI. Usa Chrome/Edge (permite MIDI) o la app EUCL para Mac.';e.classList.add('warn');}});
-}
 async function initMIDI(){
-  // la lista sale de todos los dispositivos MIDI del ordenador (interfaces, IAC, apps, virtuales)
-  if(!navigator.requestMIDIAccess){midiWarn('sin MIDI · usa Chrome');return;}
+  if(!navigator.requestMIDIAccess)return;
   try{midiAccess=await navigator.requestMIDIAccess({sysex:false});popMIDI();midiAccess.onstatechange=popMIDI;}
-  catch(e){console.warn('MIDI',e);midiWarn('MIDI bloqueado');}
+  catch(e){console.warn('MIDI',e);}
 }
 let midiIn2=null;
 function popMIDI(){
@@ -1868,16 +1767,8 @@ function _visFrame(){
 const COLORS=['var(--t1)','var(--t2)','var(--t3)','var(--t4)'];
 function buildUI(){
   const cont=document.getElementById('tracksCont');cont.innerHTML='';
-  const ic=document.getElementById('instCont'),mc=document.getElementById('mixCont');
-  if(ic)ic.innerHTML='';if(mc)mc.innerHTML='';
   TRACKS[3].parsed=parseNotation(TRACKS[3].notation||'');
-  TRACKS.forEach(t=>{
-    const mk=(cls,html)=>{const d=document.createElement('div');d.className=cls;d.dataset.track=t.id;d.style.setProperty('--kc',COLORS[t.id]);d.innerHTML=html;return d;};
-    cont.appendChild(mk('card seq-card',buildTrack(t)));
-    if(ic)ic.appendChild(mk('card inst-card',buildInstCard(t)));
-    if(mc)mc.appendChild(mk('strip',buildStrip(t)));
-  });
-  buildTabMutes();refreshMS();
+  TRACKS.forEach(t=>{const div=document.createElement('div');div.className='track';div.dataset.track=t.id;div.style.setProperty('--kc',COLORS[t.id]);div.innerHTML=buildTrack(t);cont.appendChild(div);});
   TRACKS.forEach((_,i)=>{renderDots(i);renderVals(i);if(TRACKS[i].type==='poly')renderNota(i);});
   // Wire modulation maps after DOM is built
   if(typeof buildModMaps==='function'){buildModMaps();updateModIndicators();}
@@ -1891,8 +1782,10 @@ function buildTrack(t){
   h+='<svg class="ring" id="ring'+i+'" viewBox="0 0 100 100" style="color:'+c+'"></svg>';
   h+='<div class="cyc">CYC <b id="cyc'+i+'">0</b></div>';
   h+=buildSide(t);
-  h+='<div class="ms-btns"><button class="ms-btn" id="mb'+i+'" data-m="'+i+'" onclick="toggleMute('+i+')">M</button>';
-  h+='<button class="ms-btn" id="sb'+i+'" data-s="'+i+'" onclick="toggleSolo('+i+')">S</button>';
+  h+=buildChannelHead(t);
+  h+='<div class="ms-btns"><button class="ms-btn" id="mb'+i+'" onclick="toggleMute('+i+')">M</button>';
+  h+='<button class="ms-btn" id="sb'+i+'" onclick="toggleSolo('+i+')">S</button></div>';
+  h+='<div class="ms-btns" style="margin-top:3px">';
   h+='<button class="ms-btn" onclick="copyTrack('+i+')" title="Copy track params" style="letter-spacing:0">CPY</button>';
   h+='<button class="ms-btn" id="pastebtn'+i+'" onclick="pasteTrack('+i+')" title="Paste track params" style="letter-spacing:0;opacity:.4">PST</button>';
   h+='</div></div>';
@@ -1928,46 +1821,14 @@ function buildTrack(t){
   });
   h+='</select>';
   h+='</div></div>';
+  if(i===0){h+='<div class="sec-div">KICK 909</div>'+buildKickRow(t);}
+  if(i===1){h+='<div class="sec-div">HIHAT</div>'+buildHihatRow(t);}
+  if(i===2){h+='<div class="sec-div">MONO FM</div>'+buildFMrow(t);}
+  if(i===3){h+='<div class="sec-div">POLY FM</div>'+buildPolyRow(t);}
   h+='</div>'; // close t-params
-  h+='</div>'; // close params wrapper
+  h+=buildMixStrip(t);
+  h+='</div>'; // close params+mix wrapper
   h+='</div>';return h;
-}
-const INST_NAME=['KICK 909','HIHAT','MONO FM','POLY FM'];
-function _cardHead(t,extra){
-  const i=t.id;
-  return '<div class="card-h"><b style="color:'+COLORS[i]+'">T'+(i+1)+'</b><span>'+INST_NAME[i]+'</span>'
-    +'<span class="card-ms"><button class="ms-btn" data-m="'+i+'" onclick="toggleMute('+i+')">M</button><button class="ms-btn" data-s="'+i+'" onclick="toggleSolo('+i+')">S</button></span>'+(extra||'')+'</div>';
-}
-function buildInstCard(t){
-  const i=t.id;let h=_cardHead(t)+'<div class="card-b t-params">';
-  if(i===0)h+=buildKickRow(t);
-  if(i===1)h+=buildHihatRow(t);
-  if(i===2)h+=buildFMrow(t);
-  if(i===3)h+=buildPolyRow(t);
-  return h+'</div>';
-}
-// tira de consola vertical: nivel+medidor, pan, salida, filtro, envíos, crush
-function buildStrip(t){
-  const i=t.id;
-  return '<div class="strip-h" style="border-top-color:'+COLORS[i]+'"><b style="color:'+COLORS[i]+'">T'+(i+1)+'</b><span>'+INST_NAME[i]+'</span></div>'
-    +buildChannelHead(t)+buildMixStrip(t)
-    +'<div class="strip-ms"><button class="ms-btn" data-m="'+i+'" onclick="toggleMute('+i+')">M</button><button class="ms-btn" data-s="'+i+'" onclick="toggleSolo('+i+')">S</button></div>';
-}
-function refreshMS(){
-  document.querySelectorAll('[data-m]').forEach(e=>{e.classList.toggle('muted',!!TRACKS[+e.dataset.m].muted);});
-  document.querySelectorAll('[data-s]').forEach(e=>{e.classList.toggle('soloed',!!TRACKS[+e.dataset.s].soloed);});
-}
-function buildTabMutes(){
-  const e=document.getElementById('tabMutes');if(!e)return;
-  e.innerHTML=TRACKS.map(t=>'<button class="ms-btn tm" data-m="'+t.id+'" style="--kc:'+COLORS[t.id]+'" onclick="toggleMute('+t.id+')" title="Mute T'+(t.id+1)+' (tecla '+(t.id+1)+')">T'+(t.id+1)+'</button>').join('');
-}
-// pestañas
-let VIEW='seq';
-function setView(v){
-  VIEW=v;try{localStorage.setItem('eucl.view',v);}catch(e){}
-  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
-  document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.dataset.v===v));
-  if(v==='mod'&&!matrixOpen)toggleMatrix();
 }
 
 function psl(ti,key,lbl,mn,mx,val,w){
@@ -2387,8 +2248,8 @@ function updateNota(ti,val){
   try{t.parsed=parseNotation(val);const e=document.getElementById('nst'+ti);if(e){e.textContent=t.parsed.length+' steps';e.className='nota-st';}renderNota(ti);}
   catch(e){const el=document.getElementById('nst'+ti);if(el){el.textContent='error';el.className='nota-st err';}}
 }
-function toggleMute(ti){if(!TRACKS[ti])return;TRACKS[ti].muted=!TRACKS[ti].muted;refreshMS();applyMuteSolo();repaint();}
-function toggleSolo(ti){TRACKS[ti].soloed=!TRACKS[ti].soloed;refreshMS();applyMuteSolo();}
+function toggleMute(ti){if(!TRACKS[ti])return;TRACKS[ti].muted=!TRACKS[ti].muted;const e=document.getElementById('mb'+ti);if(e)e.className='ms-btn'+(TRACKS[ti].muted?' muted':'');applyMuteSolo();repaint();}
+function toggleSolo(ti){TRACKS[ti].soloed=!TRACKS[ti].soloed;const e=document.getElementById('sb'+ti);if(e)e.className='ms-btn'+(TRACKS[ti].soloed?' soloed':'');applyMuteSolo();}
 function toggleRndLock(ti){const t=TRACKS[ti];t.rndLocked=!t.rndLocked;if(t.rndLocked)t.rndSeed=Math.random()*9999;const e=document.getElementById('rl'+ti);if(e)e.className='tbox'+(t.rndLocked?' on':'');}
 function toggleBurst(ti,mode){
   const t=TRACKS[ti],b=t.burst;
@@ -3192,7 +3053,7 @@ function buildFXUI(){
   h+='</div><div class="mod-f"><span>a</span>'+seg2('fxDestD',d.dest,'setGDlyDest','M','B','MASTER','COMP bus')+'</div></div>';
   h+='</div></div>';
   // COMP BUS
-  h+='<div class="rack-sec"><div class="rack-h">COMP BUS <span class="rack-sub">comprime lo que sale por COMP · llave SC: kick o fantasma</span></div><div class="rack-row">';
+  h+='<div class="rack-sec"><div class="rack-h">COMP BUS <span class="rack-sub">lo que va a «B» se comprime; la llave SC puede ser el kick o un kick fantasma</span></div><div class="rack-row">';
   const scCur=fb.sc?(fb.scSrc||'kick'):'off';
   h+='<div class="mod"><div class="mod-h">COMPRESOR <span class="sc-src">SC'
     +[['off','OFF','Sin llave: el bus se comprime con su propia señal'],['kick','KICK','La llave es el kick de T1 (no se mezcla en el bus)'],['ghost','FANTASMA','Kick fantasma interno: comprime a tempo sin sonar']]
@@ -3461,7 +3322,6 @@ try { initMIDI(); } catch(e){ console.warn('MIDI init:',e); }
 try{const o=parseFloat(localStorage.getItem('eucl.midiOfs'));if(!isNaN(o)){S.midiOfs=o;document.getElementById('midiOfs').value=o;}}catch(e){}
 setSaveTarget(saveTarget);renderCloudBox();checkOwner();
 knobize();
-try{const v=localStorage.getItem('eucl.view');if(v&&v!=='seq')setView(v);}catch(e){}
 </script>
 </body>
 </html>
