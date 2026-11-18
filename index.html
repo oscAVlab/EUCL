@@ -423,6 +423,109 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
 .mtr.ch{height:auto;min-height:110px;width:6px;align-self:stretch;}
 .ch-out{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:8px;}
 .ch-out .seg2 .btn{padding:4px 7px;font-size:9.5px;}
+
+/* ══ v2.3 · pestañas + pistas en filas tipo rack ══════════════════ */
+.tabbar{display:flex;gap:0;padding:0 16px;border-bottom:1px solid var(--border);background:var(--bg2);flex-shrink:0;}
+.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--text-dim);font-family:var(--cond);font-size:13px;font-weight:600;letter-spacing:.16em;padding:9px 18px 7px;cursor:pointer;display:flex;align-items:baseline;gap:10px;}
+.tab span{font-family:var(--mono);font-weight:400;font-size:9.5px;letter-spacing:.04em;color:var(--mute);}
+.tab:hover{color:var(--text-mid);}
+.tab.on{color:var(--paper);border-bottom-color:var(--turq);}
+.tabpage{display:none;}
+.tabpage.on{display:block;}
+.tracks{display:flex!important;flex-direction:column;gap:6px;padding-top:8px;}
+.track{display:flex;min-width:0;}
+.tr-row{flex:1;min-width:0;display:grid;grid-template-columns:200px auto minmax(0,1fr) auto;}
+.tr-id{display:grid;grid-template-columns:84px 1fr;grid-template-rows:auto auto 1fr auto;gap:4px 10px;padding:8px 10px;align-content:start;}
+.tr-id-top{grid-column:1/-1;display:flex;align-items:baseline;gap:8px;}
+.tr-id .ring{grid-column:1;grid-row:2/5;width:84px;max-width:84px;margin:0;}
+.tr-id .cyc{grid-column:2;grid-row:2;}
+.tr-id .t-midi{grid-column:2;grid-row:3;grid-template-columns:repeat(3,1fr);align-self:start;}
+.tr-id .ms-btns{grid-column:2;grid-row:4;display:grid;grid-template-columns:1fr 1fr;gap:3px;margin:0;}
+.tr-id .ms-btn{padding:2px 0;font-size:9.5px;text-align:center;}
+.tr-sec{border-left:1px solid var(--border);padding:7px 12px 8px;min-width:0;}
+.tr-h{font-family:var(--cond);font-size:10.5px;font-weight:600;letter-spacing:.2em;color:var(--text-mid);margin-bottom:4px;}
+.tr-seq .p-row{gap:4px 8px;flex-wrap:nowrap;align-items:flex-start;}
+.tr-seq .p-row+.p-row{margin-top:2px;}
+.p-sep{width:1px;align-self:stretch;background:var(--border);margin:2px 4px;}
+.tlock{display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text-dim);letter-spacing:.1em;cursor:pointer;margin-top:6px;}
+.burst-ctl{display:flex;flex-direction:column;gap:4px;margin-top:14px;}
+.burst-ctl .ratio-sel{width:62px;}
+.tr-seq .steps-wrap{margin-top:5px;}
+.tr-inst .t-params{padding:0;}
+.tr-inst .syn-row,.tr-inst .p-row{gap:4px 8px;}
+.tr-mix-in{display:flex;flex-wrap:wrap;gap:6px 12px;max-width:360px;align-items:flex-start;}
+.tr-mix-in .ch-head{display:flex;gap:8px;align-items:flex-start;}
+.tr-mix-in .ch-knobs{flex-direction:row;gap:8px;}
+.tr-mix-in .kg.big .kn{width:36px;height:36px;}
+.tr-mix-in .mtr.ch{height:56px;}
+.tr-mix-in .ch-out{display:flex;flex-direction:column;gap:4px;}
+.tr-mix-in .t-mix{border:none;padding:0;background:none;display:flex;flex-wrap:wrap;gap:6px 12px;}
+.tracks .kn{width:30px;height:30px;}
+.tracks .kg-l,.tracks .p-lbl{font-size:9px;}
+.tracks .kg-v,.tracks .p-val{font-size:10.5px;}
+.hdr-master{gap:8px;}
+.hdr-master .kn{width:28px;height:28px;}
+.mtr.hm{height:28px;width:5px;}
+/* el bus y la matriz en la pestaña 2 */
+#tabFx .main{padding-top:8px;}
+#tabFx .matrix-body{display:block;}
+@media (min-width:1100px){
+  html,body{height:100%;}
+  body{display:flex;flex-direction:column;height:100vh;overflow:hidden;}
+  .hdr{position:relative;flex-shrink:0;}
+  .footer{flex-shrink:0;}
+  .app{flex:1;min-height:0;display:flex;flex-direction:column;width:100%;max-width:none;}
+  .pre-main{flex-shrink:0;}
+  .tabpage.on{flex:1;min-height:0;overflow:auto;}
+  .tracks{min-height:100%;box-sizing:border-box;}
+  .tracks .track{flex:1 0 auto;}
+}
+@media (max-width:1099px){
+  .tr-row{grid-template-columns:1fr;}
+  .tr-sec{border-left:none;border-top:1px solid var(--border);}
+  .tr-seq .p-row{flex-wrap:wrap;}
+  .tr-mix-in{max-width:none;}
+  .tab span{display:none;}
+}
+
+.tabbar{align-items:center;}
+.tab-midi{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:10px;color:var(--text-dim);}
+.tab-midi .tm-l{font-family:var(--cond);font-weight:600;letter-spacing:.2em;color:var(--text-mid);}
+.tab-midi .dev-sel{max-width:150px;}
+.midi-st{font-size:10px;color:var(--amber);max-width:260px;}
+.tr-mix-in{max-width:430px;}
+.tr-mix-in .ch-head{margin:0;padding:0;border:none;}
+.tr-mix-in .mtr.ch{min-height:0;height:54px;align-self:flex-start;margin-top:14px;}
+.tr-mix-in .ch-out{justify-content:flex-start;padding-top:2px;}
+.tr-mix-in .t-mix{display:contents;}
+.tr-mix-in .mx-sec{padding:0;border:none;gap:3px;}
+.tr-mix-in .mx-h{font-size:9px;}
+.tracks .kg{min-width:40px;gap:2px;}
+.tr-inst .syn-row{margin-top:0;}
+@media (max-width:1099px){.tab-midi{margin-left:0;flex-wrap:wrap;padding:6px 0;} .tabbar{flex-wrap:wrap;}}
+
+/* instrumento: todos los controles fluyen en una sola rejilla, sin huecos */
+.tr-inst .t-params{display:flex;flex-direction:row;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;gap:6px 8px;}
+.tr-inst .syn-row{display:contents;}
+.tr-inst .syn-row.k-rumble{display:flex;flex-basis:100%;gap:6px 8px;padding-top:6px;margin-top:2px;border-top:1px dashed var(--border2);}
+.tr-inst .nota-in{flex-basis:100%;}
+.tr-inst .poly-wrap,.tr-inst .p-row{display:contents!important;}
+.tr-inst .poly-pat{flex-basis:100%;}
+.tr-inst .nota-st:empty{display:none;}
+.tr-inst .nota-steps{flex-basis:100%;}
+@media (max-width:1699px){
+  .tab span{display:none;}
+  .tr-row{grid-template-columns:168px auto minmax(0,1fr) auto;}
+  .tr-id{grid-template-columns:64px 1fr;gap:4px 8px;}
+  .tr-id .ring{width:64px;max-width:64px;}
+  .tr-mix-in{max-width:340px;gap:4px 8px;}
+  .tracks .kg{min-width:36px;}
+  .tracks .kn{width:28px;height:28px;}
+  .tr-seq .p-row{gap:2px 6px;}
+  .tr-sec{padding:6px 9px 7px;}
+  .tr-id .t-midi .midi-f{font-size:10px;}
+}
+.midi-st{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 </style>
 </head>
 <body>
@@ -430,7 +533,7 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
   <div class="brand">
     <img src="assets/logo-oscavlab.png" alt="osc[AV]lab" class="brand-logo">
     <div class="brand-sep"></div>
-    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.2</span></div>
+    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.3</span></div>
   </div>
   <div class="sig" aria-hidden="true">ž</div>
   <div class="hdr-mid">
@@ -461,15 +564,9 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
       <div class="p-val" id="mrndV">0%</div></div>
     <div class="hdr-ctl"><div class="glob-lbl" title="MIDI clock 24 PPQN + Start/Stop por MIDI OUT">CLK OUT</div>
       <button class="btn" id="btnClkOut" onclick="toggleClkOut()">OFF</button></div>
+    <div class="hdr-ctl hdr-master" id="hdrMaster"></div>
   </div>
-  <div class="hdr-right">
-    <div class="led-grp"><div class="led" id="ledIn"></div>IN1<div class="led" id="ledIn2"></div>IN2<div class="led" id="ledOut"></div>OUT</div>
-    <select class="dev-sel" id="selIn" onchange="selectIn()" title="MIDI IN 1 — control + clock"><option value="">— CTRL IN —</option></select>
-    <select class="dev-sel" id="selIn2" onchange="selectIn2()" title="MIDI IN 2 — Modulation Matrix"><option value="">— MOD IN —</option></select>
-    <select class="dev-sel" id="selOut" onchange="selectOut()"><option value="">— MIDI OUT —</option></select>
-    <label class="ofs" title="Offset MIDI OUT en ms (negativo = antes). Compensa la latencia del audio o del equipo externo.">OFS
-      <input type="number" id="midiOfs" min="-200" max="200" step="1" value="0" oninput="setMidiOfs(this.value)">ms</label>
-  </div>
+
 </div>
 
 <div class="app">
@@ -503,8 +600,23 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
   <div class="preset-list-wrap" id="presetList" style="display:none"></div>
 </div>
 
+<div class="tabbar" role="tablist">
+  <button class="tab on" data-tab="tabTracks" onclick="setTab('tabTracks')">PISTAS<span>secuencia · instrumento · mezcla</span></button>
+  <button class="tab" data-tab="tabFx" onclick="setTab('tabFx')">FX · MASTER · MOD<span>retornos · comp bus · master · matriz CC</span></button>
+    <div class="tab-midi" title="Puertos MIDI del ordenador"><span class="tm-l">MIDI</span>
+    <div class="led-grp"><div class="led" id="ledIn"></div>IN1<div class="led" id="ledIn2"></div>IN2<div class="led" id="ledOut"></div>OUT</div>
+    <select class="dev-sel" id="selIn" onchange="selectIn()" title="MIDI IN 1 — control + clock"><option value="">— CTRL IN —</option></select>
+    <select class="dev-sel" id="selIn2" onchange="selectIn2()" title="MIDI IN 2 — Modulation Matrix"><option value="">— MOD IN —</option></select>
+    <select class="dev-sel" id="selOut" onchange="selectOut()" title="MIDI OUT — notas, CC y clock"><option value="">— MIDI OUT —</option></select>
+    <label class="ofs" title="Offset MIDI OUT en ms (negativo = antes). Compensa la latencia del audio o del equipo externo.">OFS
+      <input type="number" id="midiOfs" min="-200" max="200" step="1" value="0" oninput="setMidiOfs(this.value)">ms</label>
+    <button class="btn mini" onclick="refreshMIDI()" title="Volver a buscar dispositivos">↻</button><span class="midi-st" id="midiSt"></span>
+  </div>
+</div>
+<div class="tabpage on" id="tabTracks">
 <div class="main tracks" id="tracksCont"></div>
-
+</div>
+<div class="tabpage" id="tabFx">
 <div class="main bus">
   <div class="mix-panel" id="mixPanel"></div>
   <div id="fxPanel"></div>
@@ -564,13 +676,14 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
   </div>
 </div>
 
+</div><!-- /tabFx -->
 </div><!-- /app -->
 <div class="footer">
   <div class="fk"><span class="fkey">SPACE</span> play/stop</div>
   <div class="fk"><span class="fkey">↑↓</span> BPM</div>
   <div class="fk"><span class="fkey">SHIFT ↑↓</span> ±10</div>
   <div class="fk"><span class="fkey">1–4</span> mute T1–T4</div>
-  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.2 — xužu / osc[AV]lab</div>
+  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.3 — xužu / osc[AV]lab</div>
 </div>
 <script>
 'use strict';
@@ -1176,7 +1289,7 @@ function setMxHP(i,v){MXS[i].hp=v;_kv('tmv_hp_'+i,v);const f=slToFreqLog(v,20,10
 function setMxLP(i,v){MXS[i].lp=v;_kv('tmv_lp_'+i,v);const f=slToFreqLog(v,200,20000);if(buses[i])buses[i].lp.frequency.setTargetAtTime(f,_now(),.015);upd('mxlp'+i,_fmtHz(f));upd('tmv_lp_'+i,_fmtHz(f));}
 function setMxPan(i,v){MXS[i].pan=v;_kv('tmv_pan_'+i,v);if(buses[i]&&buses[i].pan.pan)buses[i].pan.pan.setTargetAtTime(v,_now(),.015);upd('tmv_pan_'+i,Math.abs(v)<0.02?'C':(v<0?'L':'R')+Math.round(Math.abs(v)*100));}
 function setMxOut(i,d){MXS[i].out=d;routeChannel(i);['M','B'].forEach(x=>{const b=document.getElementById('mxout'+i+x);if(b)b.className='btn'+(d===x?' on':'');});}
-function setMxMaster(v){masterLv=v;_kv('mxmv',v);if(masterG)masterG.gain.setTargetAtTime(v,_now(),.015);upd('mxmv',_pct(v));}
+function setMxMaster(v){masterLv=v;_kv('mxmv',v);_kv('hmxv',v);upd('hmxv',_pct(v));if(masterG)masterG.gain.setTargetAtTime(v,_now(),.015);upd('mxmv',_pct(v));}
 
 // Sends
 function _setSend(i,k,v){FXS[i][k]=v;_kv('tmv_'+k+'_'+i,v);if(buses[i])buses[i][k].gain.setTargetAtTime(v,_now(),.015);upd('tmv_'+k+'_'+i,_pct(v));}
@@ -1546,11 +1659,13 @@ function extLocate(pulse){ // Song Position Pointer → align every track
 
 // ── MIDI ────────────────────────────────────────────────────
 let midiAccess=null,midiOut=null,midiIn=null;
+function midiStatus(t){const e=document.getElementById('midiSt');if(e)e.textContent=t||'';}
 async function initMIDI(){
-  if(!navigator.requestMIDIAccess)return;
+  if(!navigator.requestMIDIAccess){midiStatus('Sin MIDI en este navegador: usa Chrome o la app');return;}
   try{midiAccess=await navigator.requestMIDIAccess({sysex:false});popMIDI();midiAccess.onstatechange=popMIDI;}
-  catch(e){console.warn('MIDI',e);}
+  catch(e){console.warn('MIDI',e);midiStatus('MIDI sin permiso (candado de la barra)');}
 }
+async function refreshMIDI(){if(!midiAccess)return initMIDI();popMIDI();}
 let midiIn2=null;
 function popMIDI(){
   const os=document.getElementById('selOut'),is=document.getElementById('selIn'),is2=document.getElementById('selIn2');
@@ -1563,6 +1678,9 @@ function popMIDI(){
     const o1=document.createElement('option');o1.value=id;o1.textContent=p.name;if(id===pi)o1.selected=true;is.appendChild(o1);
     if(is2){const o2=document.createElement('option');o2.value=id;o2.textContent=p.name;if(id===pi2)o2.selected=true;is2.appendChild(o2);}
   }
+  const no=midiAccess.outputs.size,ni=midiAccess.inputs.size;
+  midiStatus(no+ni===0?'Ningún dispositivo MIDI: conecta uno y pulsa ↻':'');
+  const lp=document.querySelector('.tab-midi');if(lp)lp.title='Puertos MIDI del ordenador · '+no+' salidas · '+ni+' entradas';
 }
 function selectOut(){const id=document.getElementById('selOut').value;midiOut=id?midiAccess?.outputs.get(id):null;}
 function selectIn(){if(midiIn)midiIn.onmidimessage=null;const id=document.getElementById('selIn').value;midiIn=id?midiAccess?.inputs.get(id):null;if(midiIn)midiIn.onmidimessage=onMsg;}
@@ -1776,21 +1894,21 @@ function buildUI(){
 }
 
 function buildTrack(t){
-  const i=t.id,c=COLORS[i],isP=t.type==='poly';
-  let h='<div class="track-accent" style="background:'+c+'" id="acc'+i+'"></div><div class="track-inner">';
-  h+='<div class="t-hdr"><div class="t-id" style="color:'+c+'">T'+(i+1)+'</div><div class="t-name">'+t.name+'</div>';
+  const i=t.id,c=COLORS[i];
+  const INST={kick:['KICK 909',buildKickRow],hihat:['HIHAT',buildHihatRow],fm:['MONO FM',buildFMrow],poly:['POLY FM',buildPolyRow]}[t.type];
+  let h='<div class="track-accent" style="background:'+c+'" id="acc'+i+'"></div><div class="tr-row">';
+  // 1 · identidad: anillo, MIDI, mute/solo
+  h+='<div class="tr-id"><div class="tr-id-top"><div class="t-id" style="color:'+c+'">T'+(i+1)+'</div><div class="t-name">'+t.name+'</div></div>';
   h+='<svg class="ring" id="ring'+i+'" viewBox="0 0 100 100" style="color:'+c+'"></svg>';
   h+='<div class="cyc">CYC <b id="cyc'+i+'">0</b></div>';
   h+=buildSide(t);
-  h+=buildChannelHead(t);
-  h+='<div class="ms-btns"><button class="ms-btn" id="mb'+i+'" onclick="toggleMute('+i+')">M</button>';
-  h+='<button class="ms-btn" id="sb'+i+'" onclick="toggleSolo('+i+')">S</button></div>';
-  h+='<div class="ms-btns" style="margin-top:3px">';
-  h+='<button class="ms-btn" onclick="copyTrack('+i+')" title="Copy track params" style="letter-spacing:0">CPY</button>';
-  h+='<button class="ms-btn" id="pastebtn'+i+'" onclick="pasteTrack('+i+')" title="Paste track params" style="letter-spacing:0;opacity:.4">PST</button>';
-  h+='</div></div>';
-  h+='<div style="display:flex;flex-direction:column;flex:1;min-width:0">';
-  h+='<div class="t-params">';
+  h+='<div class="ms-btns"><button class="ms-btn" id="mb'+i+'" onclick="toggleMute('+i+')" title="Mute (tecla '+(i+1)+')">M</button>';
+  h+='<button class="ms-btn" id="sb'+i+'" onclick="toggleSolo('+i+')">S</button>';
+  h+='<button class="ms-btn" onclick="copyTrack('+i+')" title="Copiar pista">CPY</button>';
+  h+='<button class="ms-btn" id="pastebtn'+i+'" onclick="pasteTrack('+i+')" title="Pegar pista" style="opacity:.4">PST</button></div>';
+  h+='</div>';
+  // 2 · secuencia
+  h+='<div class="tr-sec tr-seq"><div class="tr-h">SECUENCIA</div>';
   h+='<div class="p-row">';
   h+=psl(i,'seqLen','SEQ LEN',1,64,t.seqLen,100);
   h+=psl(i,'euSteps','EU STEPS',1,64,t.euSteps,100);
@@ -1798,36 +1916,27 @@ function buildTrack(t){
   h+=psl(i,'rotate','ROTATE',0,63,t.rotate,80);
   h+='<div class="p-grp"><div class="p-lbl">RATIO</div><select class="ratio-sel" id="ratio'+i+'" onchange="updateRatio('+i+',this.value)">';
   RATIOS.forEach((r,ri)=>{h+='<option value="'+ri+'"'+(ri===t.ratioIdx?' selected':'')+'>'+r.lbl+'</option>';});
-  h+='</select></div></div>';
+  h+='</select><div class="tlock" onclick="toggleRndLock('+i+')" title="Congela el azar"><div class="tbox'+(t.rndLocked?' on':'')+'" id="rl'+i+'"></div>LOCK</div></div>';
+  h+='</div>';
   h+='<div class="p-row">';
   h+=psl(i,'probability','PROB%',0,100,t.probability,80);
   h+=psl(i,'rndAmt','RND',0,100,t.rndAmt,80);
-  h+='<div style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:8px;color:var(--text-dim);letter-spacing:.1em" onclick="toggleRndLock('+i+')">';
-  h+='<div class="tbox'+(t.rndLocked?' on':'')+'" id="rl'+i+'"></div> RND LOCK</div></div>';
-  h+='<div class="steps-wrap sz16" id="sw'+i+'"></div>';
-  h+='<div class="sec-div">BURST</div>';
-  h+='<div class="p-row" style="align-items:center">';
-  h+=psl(i,'_bCount','COUNT',1,8,t.burst.count,65);
-  h+=psl(i,'_bPulses','B.PULSES',0,16,t.burst.bPulses,65);
+  h+='<div class="p-sep"></div>';
+  h+=psl(i,'_bCount','BURST',1,8,t.burst.count,65);
+  h+=psl(i,'_bPulses','B.PULS',0,16,t.burst.bPulses,65);
   h+=psl(i,'_bRotate','B.ROT',0,15,t.burst.bRotate,65);
-  h+='<div style="display:flex;flex-direction:column;gap:3px;margin-left:4px">';
-  h+='<div style="display:flex;gap:3px">';
-  h+='<button class="btn'+(t.burst.subdivide?' on':'')+'" id="bsub'+i+'" onclick="toggleBurst('+i+',\'subdivide\')" style="padding:2px 5px;font-size:8px">SUB</button>';
-  h+='<button class="btn'+(t.burst.bite?' red-on':'')+'" id="bbite'+i+'" onclick="toggleBurst('+i+',\'bite\')" style="padding:2px 5px;font-size:8px">BITE</button>';
+  h+='<div class="burst-ctl"><div style="display:flex;gap:3px">';
+  h+='<button class="btn mini'+(t.burst.subdivide?' on':'')+'" id="bsub'+i+'" onclick="toggleBurst('+i+',\'subdivide\')">SUB</button>';
+  h+='<button class="btn mini'+(t.burst.bite?' red-on':'')+'" id="bbite'+i+'" onclick="toggleBurst('+i+',\'bite\')">BITE</button></div>';
+  h+='<select class="ratio-sel" onchange="TRACKS['+i+'].burst.subDiv=this.value">';
+  ['STEP','1/2','1/3','1/4','1/6','1/8','1/12','1/16','1/32'].forEach(s=>{h+='<option value="'+s+'"'+(t.burst.subDiv===s?' selected':'')+'>'+s+'</option>';});
+  h+='</select></div></div>';
+  h+='<div class="steps-wrap sz16" id="sw'+i+'"></div>';
   h+='</div>';
-  h+='<select class="ratio-sel" style="font-size:8px;width:52px" onchange="TRACKS['+i+'].burst.subDiv=this.value">';
-  ['STEP','1/2','1/3','1/4','1/6','1/8','1/12','1/16','1/32'].forEach(s=>{
-    h+='<option value="'+s+'"'+(t.burst.subDiv===s?' selected':'')+'>'+s+'</option>';
-  });
-  h+='</select>';
-  h+='</div></div>';
-  if(i===0){h+='<div class="sec-div">KICK 909</div>'+buildKickRow(t);}
-  if(i===1){h+='<div class="sec-div">HIHAT</div>'+buildHihatRow(t);}
-  if(i===2){h+='<div class="sec-div">MONO FM</div>'+buildFMrow(t);}
-  if(i===3){h+='<div class="sec-div">POLY FM</div>'+buildPolyRow(t);}
-  h+='</div>'; // close t-params
-  h+=buildMixStrip(t);
-  h+='</div>'; // close params+mix wrapper
+  // 3 · instrumento
+  h+='<div class="tr-sec tr-inst"><div class="tr-h">'+INST[0]+'</div><div class="t-params">'+INST[1](t)+'</div></div>';
+  // 4 · mezcla
+  h+='<div class="tr-sec tr-mix"><div class="tr-h">MEZCLA</div><div class="tr-mix-in">'+buildChannelHead(t)+buildMixStrip(t)+'</div></div>';
   h+='</div>';return h;
 }
 
@@ -2026,7 +2135,7 @@ function buildPolyRow(t){
   const isUnison=p.unisonMode??true;
   // Chord intervals as comma-separated string
   const intervals=(p.chordIntervals??[0,7,12]).join(',');
-  let h='<div style="display:flex;flex-direction:column;gap:5px;padding:3px 0">';
+  let h='<div class="poly-wrap" style="display:flex;flex-direction:column;gap:5px;padding:3px 0">';
   // Row 1: FM + envelope
   h+='<div class="syn-row">';
   h+=synSl('pfr','FM RATIO',0.5,8,p.fmRatio,0.25,'updatePoly','fmRatio',2);
@@ -2066,7 +2175,7 @@ function buildPolyRow(t){
   }
   h+='</div>';
   // Row 4: Pattern
-  h+='<div style="display:flex;align-items:center;gap:6px">';
+  h+='<div class="poly-pat" style="display:flex;align-items:center;gap:6px">';
   h+='<div class="p-lbl">PATTERN</div>';
   h+='<input class="nota-in" style="height:24px" id="nota3" value="'+(t.notation||'')+'" oninput="updateNota(3,this.value)" placeholder="c3 ~ e3 ~ g3 ~ b3 ~">';
   h+='</div>';
@@ -3147,7 +3256,7 @@ function _mtr(id,pk){const e=document.getElementById(id);if(!e)return;const db=p
 setInterval(()=>{
   if(!buses.length)return;
   buses.forEach((b,i)=>_mtr('mtr'+i,meterPeak(b.meter)));
-  if(masterChain)_mtr('mtrM',meterPeak(masterChain.meter));
+  if(masterChain){const pk=meterPeak(masterChain.meter);_mtr('mtrM',pk);_mtr('mtrHdr',pk);}
   const g=document.getElementById('grBar');if(g){const v=Math.min(24,compGR||0);g.style.transform='scaleX('+(v/24).toFixed(3)+')';upd('grVal',v.toFixed(1));}
 },60);
 
@@ -3306,11 +3415,21 @@ async function handleProgramChange(pc){
 }
 
 
+// ── PESTAÑAS ────────────────────────────────────────────────
+function setTab(id){
+  document.querySelectorAll('.tabpage').forEach(p=>p.classList.toggle('on',p.id===id));
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.tab===id));
+  try{localStorage.setItem('eucl.tab',id);}catch(e){}
+  if(id==='tabFx'&&!matrixOpen)toggleMatrix();
+}
+function buildHdrMaster(){const e=document.getElementById('hdrMaster');if(e)e.innerHTML=kn('hmxv','MASTER',0,1,masterLv,0.01,'setMxMaster(+this.value)',_pct(masterLv),'',0.85)+'<div class="mtr hm" id="mtrHdr"><i></i></div>';}
+
 // ── INIT ────────────────────────────────────────────────────
 // Estado inicial = parámetros del preset de la nube PC 45 ("24 jul 3"), copiados aquí.
 const INIT_DATA={"bpm":137,"gfx":{"lim":0,"mhp":0,"mlp":1,"sat":{"on":false,"amt":0},"revA":{"mix":1,"dest":"M"},"revB":{"mix":1,"dest":"M"},"revC":{"mix":1,"dest":"B"},"delay":{"mix":1,"dest":"B","sync":true,"time":0.957,"subDiv":"1/4","feedback":0},"fxbus":{"sc":false,"atk":0.003,"rel":0.25,"thr":0,"ratio":4,"makeup":0}},"swing":37,"ccNums":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"matrix":{"2,0":-28,"21,1":11,"35,0":16,"43,2":83,"45,2":56,"47,2":100,"28,10":-44,"67,10":94,"68,10":11},"tracks":[{"id":0,"kick":{"lpQ":0.7,"decay":0.39,"drive":0.1,"lpCut":177.55865278907652,"lpDec":0.04,"punch":true,"lpEnvAmt":8700,"pitchEnd":32,"sweepTime":0.052,"pitchStart":70},"midi":{"ch":10,"vel":100,"note":36},"burst":{"bite":true,"count":5,"subDiv":"1/16","bPulses":1,"bRotate":9,"subdivide":false},"muted":false,"pulses":6,"rndAmt":0,"rotate":0,"seqLen":16,"euSteps":16,"ratioIdx":4,"rndLocked":false,"probability":100},{"id":1,"midi":{"ch":10,"vel":80,"note":42},"burst":{"bite":false,"count":4,"subDiv":"1/16","bPulses":2,"bRotate":9,"subdivide":true},"hihat":{"open":false,"tone":4377.174805042958,"color":0,"decay":0.05,"flamTime":0.006,"openDecay":0.29,"flamLayers":4},"muted":false,"pulses":16,"rndAmt":0,"rotate":14,"seqLen":16,"euSteps":16,"ratioIdx":4,"rndLocked":false,"probability":100},{"id":2,"midi":{"ch":1,"vel":90,"note":60},"burst":{"bite":true,"count":5,"subDiv":"STEP","bPulses":5,"bRotate":2,"subdivide":false},"muted":false,"synth":{"lpQ":0.1,"decay":0.17,"glide":0.295,"lpCut":47.432980458179735,"lpDec":0.14,"lpRel":0.53,"scale":"chromatic","fmIndex":13,"fmRatio":4,"oscType":"square","release":0.31,"lpEnvAmt":1000,"rootNote":12},"pulses":8,"rndAmt":0,"rotate":18,"seqLen":16,"euSteps":23,"ratioIdx":4,"rndLocked":false,"melodyMode":"cursor","pitchCursor":127,"probability":100},{"id":3,"midi":{"ch":2,"vel":85,"note":60},"poly":{"lpQ":3.5,"decay":0.05,"lpAtk":0.005,"lpCut":45.720847753964634,"lpDec":0.42,"porta":0,"attack":0.008,"detune":15,"voices":5,"fmIndex":0,"fmRatio":1,"release":0.67,"lpEnvAmt":361,"unisonMode":true,"chordIntervals":[0,7,12]},"burst":{"bite":true,"count":2,"subDiv":"1/6","bPulses":2,"bRotate":3,"subdivide":false},"muted":true,"pulses":8,"rndAmt":0,"rotate":9,"seqLen":16,"euSteps":14,"notation":"b1  b3  b2 -  C4 - - B4 ","ratioIdx":4,"rndLocked":false,"probability":100}],"chSends":[{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":true,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16}],"masterLv":0.85,"matrixMode":{"3":"replace","19":"replace","37":"replace","39":"replace","40":"replace"}};
 try{applyPresetData(JSON.parse(JSON.stringify(INIT_DATA)));}catch(e){console.warn('INIT_DATA:',e);}
 buildUI();
+buildHdrMaster();
 buildMixerUI();
 buildFXUI();
 buildMatrix();
@@ -3322,6 +3441,7 @@ try { initMIDI(); } catch(e){ console.warn('MIDI init:',e); }
 try{const o=parseFloat(localStorage.getItem('eucl.midiOfs'));if(!isNaN(o)){S.midiOfs=o;document.getElementById('midiOfs').value=o;}}catch(e){}
 setSaveTarget(saveTarget);renderCloudBox();checkOwner();
 knobize();
+try{const t=localStorage.getItem('eucl.tab');if(t&&document.getElementById(t))setTab(t);}catch(e){}
 </script>
 </body>
 </html>

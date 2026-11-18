@@ -4,6 +4,11 @@ Secuenciador euclídeo de 4 pistas (kick, hihat, mono FM, poly FM) con síntesis
 
 **App para Mac v0.2** (motor Chrome: ajustes de salida de audio y buffer, puertos virtuales "EUCL", timing de tiempo real): ver [desktop/](desktop/README.md) y la [guía](desktop/docs/GUIA.md). La versión anterior con Safari/WKWebView queda en [app/](app/README.md).
 
+## v2.3 (2026-11-19)
+- **Pestañas**: PISTAS (cada pista en una fila tipo rack: anillo + MIDI · SECUENCIA · INSTRUMENTO · MEZCLA) y FX · MASTER · MOD (retornos, comp bus, master, matriz CC abierta, referencia). A 1920×1080 todo cabe sin scroll.
+- MIDI (CTRL IN, MOD IN, OUT, OFS, ↻) en la barra de pestañas, con aviso si el navegador no tiene MIDI o no hay dispositivos.
+- MASTER level + medidor en la cabecera.
+
 ## v2.1 (2026-11-18)
 - **Ruteo revisado**: canal = HP → LP → CRUSH → PAN → LEVEL (+mute/solo como ganancia) → MASTER o COMP BUS; envíos post-fader a ROOM / HALL / CATHEDRAL / DELAY.
 - **Sidechain real**: el compresor del COMP BUS usa el kick solo como llave (AudioWorklet); antes el kick se mezclaba dentro del bus y sonaba duplicado (+6 dB de makeup).
