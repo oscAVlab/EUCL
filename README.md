@@ -2,6 +2,8 @@
 
 Secuenciador euclídeo de 4 pistas (kick, hihat, mono FM, poly FM) con síntesis WebAudio, MIDI OUT, MIDI clock y matriz de CC. Web: https://oscavlab.github.io/EUCL/ (Chrome/Edge para Web MIDI).
 
+**App para Mac** (CoreMIDI nativo, puertos virtuales "EUCL", timing de tiempo real): ver [app/](app/README.md) y la [guía](app/docs/GUIA.md).
+
 ## v2.0 (2026-11-18)
 - **MIDI**: notas con timestamp (salen junto al audio, no 120 ms antes); CLK OUT a 24 PPQN reales + Start/Stop; offset MIDI (OFS ms); los burst también salen por MIDI; Stop limpia la cola MIDI.
 - **Reloj externo**: arranque correcto desde el primer pulso, ratios ×3/×5 repartidos de forma uniforme, swing también en EXT, Song Position Pointer y Continue, clock thru.
