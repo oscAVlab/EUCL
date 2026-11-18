@@ -11,7 +11,7 @@ module.exports = (win, app) => {
       console.log("puertos", JSON.stringify(await ev(`({out:[...document.getElementById('selOut').options].map(o=>o.text),ins:[...document.getElementById('selIn').options].map(o=>o.text),audioBtn:!!document.querySelector('#euclSet')})`)));
       await ev(`document.getElementById('selOut').value='eucl-virtual-out';selectOut();document.getElementById('btnClkOut').click();document.getElementById('btnPlay').click();`);
       await sleep(4000);
-      console.log("tocando", JSON.stringify(await ev(`({playing:S.playing,idx:TRACKS.map(t=>t.activeIdx),sr:__euclCtx&&__euclCtx.sampleRate,base:__euclCtx&&__euclCtx.baseLatency,state:__euclCtx&&__euclCtx.state,mem:localStorage.getItem('eucl.app.port.selOut')})`)));
+      console.log("tocando", JSON.stringify(await ev(`({sc:!!(fxBus&&fxBus.comp),knobs:KNOBS.length,playing:S.playing,idx:TRACKS.map(t=>t.activeIdx),sr:__euclCtx&&__euclCtx.sampleRate,base:__euclCtx&&__euclCtx.baseLatency,state:__euclCtx&&__euclCtx.state,mem:localStorage.getItem('eucl.app.port.selOut')})`)));
       await ev(`EUCLAPP && document.querySelector('.btn[title^="Ajustes"]').click()`);
       await sleep(1200);
       const img = await wc.capturePage();

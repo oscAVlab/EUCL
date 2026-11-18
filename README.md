@@ -4,6 +4,15 @@ Secuenciador euclídeo de 4 pistas (kick, hihat, mono FM, poly FM) con síntesis
 
 **App para Mac v0.2** (motor Chrome: ajustes de salida de audio y buffer, puertos virtuales "EUCL", timing de tiempo real): ver [desktop/](desktop/README.md) y la [guía](desktop/docs/GUIA.md). La versión anterior con Safari/WKWebView queda en [app/](app/README.md).
 
+## v2.1 (2026-11-18)
+- **Ruteo revisado**: canal = HP → LP → CRUSH → PAN → LEVEL (+mute/solo como ganancia) → MASTER o COMP BUS; envíos post-fader a ROOM / HALL / CATHEDRAL / DELAY.
+- **Sidechain real**: el compresor del COMP BUS usa el kick solo como llave (AudioWorklet); antes el kick se mezclaba dentro del bus y sonaba duplicado (+6 dB de makeup).
+- **Limitador real** en el master (drive 0…+12 dB contra techo de -0,3 dBFS); antes solo bajaba el volumen.
+- Presets y morph guardan/interpolan LEVEL, PAN, HP, LP, salida y envíos de cada pista.
+- **Perillas** en todos los controles (arrastrar ↕, Shift fino, rueda, doble clic = valor por defecto); punto ámbar = valor modulado por CC.
+- Medidores por pista y master, medidor de reducción (GR) del COMP BUS; panel de bus tipo rack.
+- Hihat sin crear un buffer de ruido por golpe (menos CPU); SIZE de reverb sin regenerar en cada movimiento.
+
 ## v2.0 (2026-11-18)
 - **MIDI**: notas con timestamp (salen junto al audio, no 120 ms antes); CLK OUT a 24 PPQN reales + Start/Stop; offset MIDI (OFS ms); los burst también salen por MIDI; Stop limpia la cola MIDI.
 - **Reloj externo**: arranque correcto desde el primer pulso, ratios ×3/×5 repartidos de forma uniforme, swing también en EXT, Song Position Pointer y Continue, clock thru.
