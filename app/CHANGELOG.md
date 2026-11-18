@@ -1,5 +1,8 @@
 # EUCL app — cambios
 
+## v0.1.1 (2026-11-18)
+- Arreglo: no se veía el paso actual al reproducir (sonaba pero no se movía). En WKWebView `getOutputTimestamp()` devuelve un contextTime incoherente; ahora se valida y, si no cuadra, se usa `currentTime`. Esto también corrige la hora de las notas MIDI, que salían cada vez más tarde.
+
 ## v0.1 (2026-11-18)
 - Primera versión: web EUCL v2.0 dentro de la app (WKWebView, JUCE 8.0.4).
 - MIDI nativo CoreMIDI con puertos virtuales "EUCL" (in/out).

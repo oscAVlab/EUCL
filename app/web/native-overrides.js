@@ -63,6 +63,22 @@
   }, true);
   window.open = function (u) { if (u && /^https?:/.test(String(u))) EU.call("eu_open_url", String(u)); return null; };
 
+  // ── Reloj de audio: WebKit (WKWebView) puede devolver en getOutputTimestamp() un contextTime
+  //    que no avanza o está desfasado. La web lo usa para dibujar el paso actual y para poner
+  //    hora a las notas MIDI. Si no es coherente con currentTime, se usa currentTime + performance.now().
+  if (typeof window._outTs === "function" && typeof window.AC === "function") {
+    window._outTs = function () {
+      const c = AC();
+      const ct = c.currentTime, pn = performance.now();
+      if (c.getOutputTimestamp) {
+        const o = c.getOutputTimestamp();
+        if (o && o.performanceTime > 0 && o.contextTime > 0 &&
+            Math.abs(o.contextTime - ct) < 0.25 && Math.abs(o.performanceTime - pn) < 250) return o;
+      }
+      return { contextTime: ct, performanceTime: pn };
+    };
+  }
+
   // ── marca "APP" junto a la versión ──
   EU.call("eu_info").then((info) => {
     const v = document.querySelector(".brand-app .ver");

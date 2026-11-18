@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 
-set(EU_VERSION 0.1.0)            # versión de paquete (macOS)
-set(EU_VERSION_SHORT "0.1")      # versión osc[AV]lab de la app (v0.1, v0.2, ...)
+set(EU_VERSION 0.1.1)            # versión de paquete (macOS)
+set(EU_VERSION_SHORT "0.1.1")      # versión osc[AV]lab de la app (v0.1, v0.2, ...)
 project(OSCAVLAB_EUCL VERSION ${EU_VERSION} LANGUAGES C CXX)
 if(APPLE)
     enable_language(OBJCXX)
