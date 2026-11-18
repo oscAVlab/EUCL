@@ -2294,14 +2294,15 @@ async function loadPresets(){
     const isA=ACTIVE&&ACTIVE.src===src&&ACTIVE.id===r.id,canEdit=src==='local'||CAN_WRITE;
     const d=new Date(r.created_at);const ds=isNaN(d)?'':d.toLocaleDateString('es',{day:'2-digit',month:'2-digit',year:'2-digit'});
     return '<div class="preset-row'+(isA?' preset-row-active':'')+'" data-src="'+src+'" data-id="'+escH(r.id)+'">'
-      +(src==='cloud'?'<div class="preset-pc" title="Program Change">PC '+idx+'</div>':'')
+      +(src==='cloud'?'<div class="preset-pc" title="Program Change">PC '+(idx>=PC_INIT?idx+1:idx)+'</div>':'')
       +'<div class="preset-row-name" title="click = cargar'+(canEdit?' · doble click = renombrar':'')+'">'+escH(r.name)+'</div>'
       +'<div class="preset-row-date">'+ds+'</div>'
       +(src==='cloud'?'<button class="btn" style="padding:2px 7px;font-size:9px" data-act="copy" title="Copiar a LOCAL">⇣ LOCAL</button>':(CAN_WRITE?'<button class="btn" style="padding:2px 7px;font-size:9px" data-act="up" title="Subir a la NUBE">⇡ NUBE</button>':''))
       +(canEdit?'<button class="btn" style="padding:2px 7px;font-size:9px" data-act="ren">✎</button><button class="btn" style="padding:2px 7px;font-size:9px;color:var(--red)" data-act="del">✕</button>':'')
       +'</div>';
   };
-  let h='<div class="preset-sec">NUBE <span>'+(cloudErr?'sin conexión':CLOUD_ROWS.length+' presets · '+(CAN_WRITE?'escritura activada':'solo lectura'))+'</span></div>';
+  let h='<div class="preset-row" data-src="init" data-id="init"><div class="preset-pc" title="Program Change">PC '+PC_INIT+'</div><div class="preset-row-name" title="click = cargar INIT">INIT</div><div class="preset-row-date">por defecto</div></div>';
+  h+='<div class="preset-sec">NUBE <span>'+(cloudErr?'sin conexión':CLOUD_ROWS.length+' presets · '+(CAN_WRITE?'escritura activada':'solo lectura'))+'</span></div>';
   h+=CLOUD_ROWS.map((r,i)=>row('cloud',r,i)).join('')||'<div class="preset-row"><div class="preset-row-name">—</div></div>';
   h+='<div class="preset-sec">LOCAL <span>en este navegador · '+loc.length+' presets · usa EXPORT para copia de seguridad</span></div>';
   h+=loc.slice().reverse().map(r=>row('local',r)).join('')||'<div class="preset-row"><div class="preset-row-name" style="cursor:default">Aún no hay presets locales</div></div>';
@@ -2310,13 +2311,14 @@ async function loadPresets(){
 function _presetListClick(e){
   const rowEl=e.target.closest('.preset-row');if(!rowEl||!rowEl.dataset.id)return;
   const src=rowEl.dataset.src,id=rowEl.dataset.id,act=e.target.dataset.act;
+  if(src==='init'){if(e.target.classList.contains('preset-row-name'))loadInitPreset();return;}
   if(act==='del')return deletePreset(src,id);
   if(act==='ren')return startRename(src,id);
   if(act==='copy')return copyCloudToLocal(id);
   if(act==='up')return uploadLocal(id);
   if(e.target.classList.contains('preset-row-name'))loadPreset(src,id);
 }
-function _presetListDbl(e){const rowEl=e.target.closest('.preset-row');if(rowEl&&rowEl.dataset.id&&e.target.classList.contains('preset-row-name')&&(rowEl.dataset.src==='local'||CAN_WRITE))startRename(rowEl.dataset.src,rowEl.dataset.id);}
+function _presetListDbl(e){const rowEl=e.target.closest('.preset-row');if(rowEl&&rowEl.dataset.id&&rowEl.dataset.src!=='init'&&e.target.classList.contains('preset-row-name')&&(rowEl.dataset.src==='local'||CAN_WRITE))startRename(rowEl.dataset.src,rowEl.dataset.id);}
 let presetListOpen=false;
 function togglePresetList(force){
   presetListOpen=typeof force==='boolean'?force:!presetListOpen;
@@ -3128,7 +3130,13 @@ function buildCCCtrlMap(){
 let CC_CTRL_MAP = {};
 
 // Program Change handler — load preset by index
+// PC 45 = INIT (estado por defecto con el que arranca EUCL), reservado
+const PC_INIT=45;let INIT_PRESET=null;
+function loadInitPreset(){if(!INIT_PRESET)return;morphToPreset(JSON.parse(JSON.stringify(INIT_PRESET)));
+  ACTIVE=null;document.getElementById('presetName').value='INIT';pSt('cargado: INIT (PC '+PC_INIT+')');if(presetListOpen)loadPresets();}
 async function handleProgramChange(pc){
+  if(pc===PC_INIT){loadInitPreset();return;}
+  if(pc>PC_INIT)pc--; // los presets de la nube saltan el 45
   try{const rows=await sbFetch('eucl_presets?select=id,name&order=created_at.asc&limit=1&offset='+pc);
     if(rows&&rows[0]){loadPreset('cloud',rows[0].id);return;}}
   catch(e){console.warn('PC cloud:',e);}
@@ -3143,6 +3151,7 @@ buildFXUI();
 buildMatrix();
 CC_CTRL_MAP=buildCCCtrlMap(); // build MIDI CC direct map
 initCCBase(); // seed base store from initial track state
+try{INIT_PRESET=JSON.parse(JSON.stringify(getPresetData()));}catch(e){console.warn('INIT snapshot:',e);}
 try { initMIDI(); } catch(e){ console.warn('MIDI init:',e); }
 // Load presets — graceful fallback if no network
 {const pl=document.getElementById('presetList');pl.addEventListener('click',_presetListClick);pl.addEventListener('dblclick',_presetListDbl);}
