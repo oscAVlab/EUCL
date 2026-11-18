@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>EUCL no graba audio: macOS lo pide sólo para mostrar los nombres de las salidas de audio.</string>
+  <key>LSApplicationCategoryType</key>
+  <string>public.app-category.music</string>
+</dict>
+</plist>
