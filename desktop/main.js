@@ -70,9 +70,42 @@ function startVirtualMidi() {
     const midi = require("@julusian/midi");
     vin = new midi.Input();
     vin.ignoreTypes(true, false, true);   // ignora SysEx y Active Sensing; deja pasar el clock
-    vin.on("message", (_dt, msg) => { if (inWanted && win) win.webContents.send("midi-in", [{ d: msg, t: epochNow() }]); });
+    vin.on("message", (_dt, msg) => { if (inWanted && win) win.webContents.send("midi-in", [{ d: msg, t: epochNow(), p: "" }]); });
     vin.openVirtualPort(VNAME);
   } catch (e) { console.error("MIDI in virtual:", e); }
+  // puertos físicos: CoreMIDI directo (no depende del Web MIDI de Chrome)
+  setInterval(pollPorts, 2000); pollPorts();
+}
+let ports = { outputs: [], inputs: [] };
+const hwIn = new Map();   // nombre → Input abierto
+function listPorts() {
+  const midi = require("@julusian/midi"), r = { outputs: [], inputs: [] };
+  try { const o = new midi.Output(); for (let i = 0; i < o.getPortCount(); i++) r.outputs.push(o.getPortName(i)); o.closePort && o.closePort(); } catch (e) {}
+  try { const n = new midi.Input(); for (let i = 0; i < n.getPortCount(); i++) r.inputs.push(n.getPortName(i)); n.closePort && n.closePort(); } catch (e) {}
+  r.outputs = [...new Set(r.outputs.filter((x) => x && x !== VNAME))];
+  r.inputs = [...new Set(r.inputs.filter((x) => x && x !== VNAME))];
+  return r;
+}
+function pollPorts() {
+  const r = listPorts();
+  if (JSON.stringify(r) === JSON.stringify(ports)) return;
+  ports.outputs.filter((x) => !r.outputs.includes(x)).forEach((x) => sched && sched.forget(x));
+  ports.inputs.filter((x) => !r.inputs.includes(x)).forEach((x) => setHwIn(x, false));
+  ports = r;
+  if (win) win.webContents.send("midi-ports", ports);
+}
+function setHwIn(name, on) {
+  const cur = hwIn.get(name);
+  if (!on) { if (cur) { try { cur.closePort(); } catch (e) {} hwIn.delete(name); } return; }
+  if (cur) return;
+  try {
+    const midi = require("@julusian/midi"), inp = new midi.Input();
+    for (let i = 0; i < inp.getPortCount(); i++) if (inp.getPortName(i) === name) {
+      inp.ignoreTypes(true, false, true);
+      inp.on("message", (_dt, msg) => { if (win) win.webContents.send("midi-in", [{ d: msg, t: epochNow(), p: name }]); });
+      inp.openPort(i); hwIn.set(name, inp); return;
+    }
+  } catch (e) { console.error("MIDI in", name, e.message); }
 }
 
 app.whenReady().then(() => {
@@ -92,9 +125,10 @@ app.whenReady().then(() => {
     return new Response(fs.readFileSync(file), { headers: { "content-type": MIME[ext] || "application/octet-stream" } });
   });
 
-  ipcMain.on("midi-send", (_e, batch) => { if (Array.isArray(batch) && sched) sched.send(batch.filter((m) => Array.isArray(m.d) && m.d.length && m.d.length <= 3 && m.d[0] >= 0x80 && m.d[0] !== 0xf0)); });
+  ipcMain.on("midi-send", (_e, batch) => { if (Array.isArray(batch) && sched) sched.send(batch.filter((m) => Array.isArray(m.d) && m.d.length && m.d.length <= 3 && m.d[0] >= 0x80 && m.d[0] !== 0xf0 && (m.p === undefined || m.p === "" || ports.outputs.includes(m.p)))); });
   ipcMain.on("midi-clear", () => sched && sched.clear());
-  ipcMain.on("midi-in-wanted", (_e, on) => { inWanted = !!on; });
+  ipcMain.on("midi-in-wanted", (_e, on, port) => { if (!port) inWanted = !!on; else if (ports.inputs.includes(port)) setHwIn(port, !!on); });
+  ipcMain.handle("midi-ports", () => ports);
   ipcMain.on("reload", () => win && win.webContents.reloadIgnoringCache());
   ipcMain.handle("info", () => ({ version: APP_VERSION, web: webVersion, electron: process.versions.electron, chrome: process.versions.chrome }));
 
@@ -106,4 +140,4 @@ app.whenReady().then(() => {
 app.on("second-instance", () => { if (win) { if (win.isMinimized()) win.restore(); win.focus(); } });
 app.on("activate", () => { if (!win) createWindow(); });
 app.on("window-all-closed", () => app.quit());
-app.on("will-quit", () => { try { vin && vin.closePort(); } catch (e) {} if (sched) sched.close(); });
+app.on("will-quit", () => { try { vin && vin.closePort(); } catch (e) {} hwIn.forEach((x) => { try { x.closePort(); } catch (e) {} }); if (sched) sched.close(); });

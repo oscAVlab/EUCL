@@ -20,6 +20,7 @@ class MidiScheduler {
   // batch: [{d:[bytes], t: ms epoch (0 = ahora)}]
   send(batch) { this.port.postMessage({ batch }); this._wake(); }
   clear() { this.port.postMessage({ clear: true }); this._wake(); }
+  forget(name) { this.port.postMessage({ forget: name }); this._wake(); }
   sentLog() { return new Promise((r) => { this._statsCb = r; this.port.postMessage({ stats: true }); this._wake(); }); }
   async close() { this.port.postMessage({ quit: true }); this._wake(); await new Promise((r) => setTimeout(r, 50)); await this.worker.terminate(); }
 }

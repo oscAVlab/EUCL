@@ -8,17 +8,34 @@ const flag = new Int32Array(flagBuf);
 const now = () => performance.timeOrigin + performance.now();   // ms epoch, alta resolución
 
 const SPIN_MS = 0.6, MAX_WAIT = 100, MAX_QUEUE = 20000;
-let out = null, sent = [];
+let out = null, sent = [], midi = null;
+const hw = new Map();   // nombre de puerto físico → Output abierto
 if (fake) out = { sendMessage: (d) => sent.push({ at: now(), d }) };
 else {
   try {
-    const midi = require("@julusian/midi");
+    midi = require("@julusian/midi");
     out = new midi.Output();
     out.openVirtualPort(workerData.name || "EUCL");
   } catch (e) {
     console.error("MIDI out virtual no disponible:", e.message);
     out = { sendMessage() {}, closePort() {} };
   }
+}
+// salidas físicas (interfaces, Ableton IAC, etc.): se abren por nombre al primer uso
+function portOut(name) {
+  if (!name) return out;
+  if (hw.has(name)) return hw.get(name);
+  let o = null;
+  if (fake) o = { sendMessage: (d) => sent.push({ at: now(), d, p: name }) };
+  else if (midi) {
+    try {
+      const probe = new midi.Output(), n = probe.getPortCount();
+      for (let i = 0; i < n; i++) if (probe.getPortName(i) === name) { probe.openPort(i); o = probe; break; }
+      if (!o) probe.closePort && probe.closePort();
+    } catch (e) { console.error("MIDI out", name, e.message); }
+  }
+  if (o) hw.set(name, o);
+  return o;
 }
 
 // montículo por (t, seq)
@@ -31,10 +48,11 @@ let lateSum = 0, lateMax = 0, lateN = 0, lastStat = now(), running = true;
 function handle(msg) {
   if (msg.quit) { running = false; return; }
   if (msg.clear) { heap.length = 0; return; }
+  if (msg.forget) { const o = hw.get(msg.forget); try { o && o.closePort && o.closePort(); } catch (e) {} hw.delete(msg.forget); return; }
   if (msg.stats) { parentPort.postMessage({ sent }); sent = []; return; }
   for (const m of msg.batch || []) {
     if (heap.length >= MAX_QUEUE) break;
-    push({ t: m.t > 0 ? m.t : 0, s: seq++, d: m.d });
+    push({ t: m.t > 0 ? m.t : 0, s: seq++, d: m.d, p: m.p || "" });
   }
 }
 
@@ -45,7 +63,7 @@ while (running) {
   const t = now();
   while (heap.length && heap[0].t <= t + 0.02) {
     const e = pop();
-    try { out.sendMessage(e.d); } catch (err) {}
+    try { const o = portOut(e.p); if (o) o.sendMessage(e.d); } catch (err) {}
     if (e.t > 0) { const late = Math.max(0, now() - e.t); if (late < 50) { lateSum += late; lateMax = Math.max(lateMax, late); lateN++; } }
   }
   if (t - lastStat > 1500 && !fake) {
@@ -57,4 +75,4 @@ while (running) {
   if (wait > SPIN_MS + 0.2) Atomics.wait(flag, 0, 0, Math.min(MAX_WAIT, wait - SPIN_MS));
   // si no, espera activa breve: vuelve al bucle
 }
-try { if (!fake) out.closePort(); } catch (e) {}
+try { if (!fake) { out.closePort(); hw.forEach((o) => o.closePort()); } } catch (e) {}
