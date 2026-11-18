@@ -385,8 +385,9 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
 /* medidores */
 .mtr{width:5px;height:58px;background:#0a0a09;border:1px solid #25231f;position:relative;overflow:hidden;align-self:center;}
 .mtr.big{width:8px;height:66px;}
-.mtr i{position:absolute;left:0;right:0;bottom:0;height:100%;transform-origin:bottom;transform:scaleY(0);
-  background:linear-gradient(to top,var(--turq-deep) 0%,var(--turq) 70%,#e0c14a 88%,var(--red) 100%);background-size:100% 66px;background-position:bottom;}
+.mtr{background:linear-gradient(to top,var(--turq-deep) 0%,var(--turq) 62%,#e0c14a 82%,var(--red) 96%);}
+.mtr i{position:absolute;left:0;right:0;top:0;height:100%;transform-origin:top;transform:scaleY(1);background:#0a0a09;}
+.mtr::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to top,transparent 0 3px,#0a0a09 3px 4px);}
 .mtr.clip{border-color:var(--red);}
 /* rack de bus */
 .busrack{display:flex;flex-wrap:wrap;gap:10px;}
@@ -2972,7 +2973,7 @@ updateSliderOverlay=function(svgId,baseNorm,liveNorm,isActive){
 
 // ── MEDIDORES ─────────────────────────────────────────────────
 function _mtr(id,pk){const e=document.getElementById(id);if(!e)return;const db=pk>1e-5?20*Math.log10(pk):-100;
-  const h=Math.max(0,Math.min(1,(db+48)/48));e.firstChild.style.transform='scaleY('+h.toFixed(3)+')';e.classList.toggle('clip',pk>=0.99);}
+  const h=Math.max(0,Math.min(1,(db+48)/48));e.firstChild.style.transform='scaleY('+(1-h).toFixed(3)+')';e.classList.toggle('clip',pk>=0.99);}
 setInterval(()=>{
   if(!buses.length)return;
   buses.forEach((b,i)=>_mtr('mtr'+i,meterPeak(b.meter)));
