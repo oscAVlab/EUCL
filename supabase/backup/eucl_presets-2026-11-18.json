@@ -1,0 +1,10380 @@
+[
+ {
+  "id": "b62d303a-dbd3-4a6c-8ed0-e8c61b1a0530",
+  "name": "1",
+  "created_at": "2026-04-10T14:07:32.922613+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 350,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 8,
+      "bPulses": 6,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.36,
+      "scale": "mixolydian",
+      "fmIndex": 2.5,
+      "fmRatio": 4,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "143f88f9-bbd0-4171-b578-281a13bff32c",
+  "name": "2",
+  "created_at": "2026-04-10T14:10:42.953903+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 350,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.16,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 4,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "cec68b67-246d-471b-8a3e-a00d93c045b1",
+  "name": "3",
+  "created_at": "2026-04-10T14:10:55.08206+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 350,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.16,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6.5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "888868fb-a995-45f0-9cde-c605340758fc",
+  "name": "4",
+  "created_at": "2026-04-10T14:11:46.09854+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.4,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6.5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "558f1fab-c6af-4337-949c-65fb0d384d59",
+  "name": "5",
+  "created_at": "2026-04-10T14:12:02.766256+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.4,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6.5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "418123ce-20b6-4704-a316-cd7e4be24c53",
+  "name": "6",
+  "created_at": "2026-04-10T14:17:09.952265+00:00",
+  "data": {
+   "bpm": 134,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "size": 0.75
+    },
+    "delay": {
+     "mix": 0,
+     "time": 0.375,
+     "feedback": 0.35
+    }
+   },
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "lpDec": 0.01,
+      "punch": true,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.16,
+      "flamTime": 0.029641259842519682,
+      "openDecay": 0.4,
+      "flamLayers": 3
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.09,
+      "glide": 0,
+      "lpCut": 4000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "mixolydian",
+      "fmIndex": 4,
+      "fmRatio": 5,
+      "oscType": "sine",
+      "release": 0.15,
+      "lpEnvAmt": 800,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 37,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.71,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 530,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": true,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "4a6e70d8-3071-4fd3-ab86-e364cb1c2f9d",
+  "name": "7",
+  "created_at": "2026-04-10T14:17:24.30712+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.04,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.71,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "30f52516-c305-4246-8ef3-7ebe14259419",
+  "name": "8",
+  "created_at": "2026-04-10T14:18:25.869283+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.04,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.61,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "1f76be29-6f4e-4edf-a037-6ac208cbd189",
+  "name": "9",
+  "created_at": "2026-04-10T14:18:31.646671+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 1.24,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.61,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "a3d43f2c-8dd1-4b06-a41c-6cf14baf94a6",
+  "name": "10",
+  "created_at": "2026-04-10T14:20:17.503453+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.97,
+      "drive": 0.03,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 65,
+      "sweepTime": 0.056,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.04,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.61,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "e7d0ce1d-f0a2-411a-9aa4-f7635eb331ac",
+  "name": "11",
+  "created_at": "2026-04-10T14:21:07.387661+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 1.32,
+      "drive": 0.03,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 65,
+      "sweepTime": 0.056,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 8,
+      "bPulses": 2,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.04,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 1.65,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.64,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 9,
+      "fmRatio": 2.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "ac69c4dd-baa7-493d-9427-18a9e6ba022b",
+  "name": "12",
+  "created_at": "2026-04-10T14:25:59.519265+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 1,
+      "drive": 0.07,
+      "lpCut": 18000,
+      "punch": true,
+      "pitchEnd": 43,
+      "sweepTime": 0.056,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 8,
+      "bPulses": 0,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.04,
+      "scale": "mixolydian",
+      "fmIndex": 6.5,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 2.35,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.38,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 11.5,
+      "fmRatio": 3,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": true,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "fc4ce27f-163b-4a1b-a11b-9960bd81d974",
+  "name": "13",
+  "created_at": "2026-04-10T14:29:05.298525+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 1,
+      "drive": 0.07,
+      "lpCut": 18000,
+      "punch": true,
+      "pitchEnd": 43,
+      "sweepTime": 0.056,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 8,
+      "bPulses": 0,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.76,
+      "scale": "pentatonic",
+      "fmIndex": 0,
+      "fmRatio": 2,
+      "rootNote": 72
+     },
+     "pulses": 6,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 2.35,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.38,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 11.5,
+      "fmRatio": 3,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": true,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "d877b437-32f2-4236-975a-944dcdae4535",
+  "name": "14",
+  "created_at": "2026-04-10T16:18:15.594405+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.2,
+      "scale": "mixolydian",
+      "fmIndex": 4,
+      "fmRatio": 5,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.65,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.4,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 530
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c3 ~ g#2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "58c75a92-b3c6-45ec-b9e3-0306a624612d",
+  "name": "15",
+  "created_at": "2026-04-10T16:31:33.931243+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 4.3,
+      "decay": 0.38,
+      "drive": 0.62,
+      "lpCut": 110,
+      "punch": true,
+      "pitchEnd": 25,
+      "sweepTime": 0.076,
+      "pitchStart": 180
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "decay": 0.2,
+      "scale": "mixolydian",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "rootNote": 36
+     },
+     "pulses": 17,
+     "rndAmt": 43,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.33,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 2400
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 25,
+     "notation": "c2 c2 c4 g#2 c2 c#3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "dfaddebf-880e-42db-8a89-c9342ea94e0e",
+  "name": "16",
+  "created_at": "2026-04-10T16:40:06.521494+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 4.3,
+      "decay": 0.38,
+      "drive": 0.62,
+      "lpCut": 110,
+      "punch": true,
+      "pitchEnd": 25,
+      "sweepTime": 0.076,
+      "pitchStart": 180
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "decay": 0.2,
+      "scale": "mixolydian",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "rootNote": 36
+     },
+     "pulses": 17,
+     "rndAmt": 43,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.83,
+      "lpAtk": 0.005,
+      "lpCut": 30,
+      "lpDec": 0.56,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "lpEnvAmt": 550
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 25,
+     "notation": "c2 c2 c4 g#2 c2 c#3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "51723f23-987d-4485-a991-cae8bb3bba99",
+  "name": "17",
+  "created_at": "2026-04-10T16:57:10.208673+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.66,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "openDecay": 0.4
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.16,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6.5,
+      "release": 0.72,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "pitchCursor": 60,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "236ed412-03dc-44f6-bc27-df1b7e7d6e06",
+  "name": "18",
+  "created_at": "2026-04-10T16:58:31.582697+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.66,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "openDecay": 0.4
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.16,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6.5,
+      "release": 0.01,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "pitchCursor": 60,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.25,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "e1de71c8-a9b9-4b45-9f52-deb969462790",
+  "name": "19",
+  "created_at": "2026-04-10T17:03:44.156736+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 350,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "openDecay": 0.4
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.08,
+      "scale": "mixolydian",
+      "fmIndex": 7.5,
+      "fmRatio": 6,
+      "release": 0.62,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "pitchCursor": 55,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "d6c485ee-83d7-45f1-a2a2-5ef5672b17fc",
+  "name": "20",
+  "created_at": "2026-04-10T17:04:58.611588+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 1860,
+      "punch": true,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 86,
+      "decay": 0.13,
+      "openDecay": 1.14
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "decay": 0.08,
+      "scale": "mixolydian",
+      "fmIndex": 10,
+      "fmRatio": 4,
+      "release": 0.82,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "pitchCursor": 55,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "919af13f-850c-46a9-8f18-029d520cd917",
+  "name": "21",
+  "created_at": "2026-04-10T17:18:08.20722+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.45,
+      "drive": 0.13,
+      "lpCut": 8450,
+      "punch": true,
+      "pitchEnd": 32,
+      "sweepTime": 0.04,
+      "pitchStart": 82
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 8,
+      "bPulses": 1,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 36,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "openDecay": 0.4
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "decay": 0.2,
+      "scale": "mixolydian",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "release": 0.72,
+      "rootNote": 36
+     },
+     "pulses": 17,
+     "rndAmt": 43,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "pitchCursor": 60,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.11,
+      "lpAtk": 0.042,
+      "lpCut": 20,
+      "lpDec": 0.34,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.55,
+      "lpEnvAmt": 320,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 1,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 25,
+     "notation": "c2 c2 c4 g#2 c2 c#3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "56026fc3-3526-4fa1-b907-d373701acba0",
+  "name": "22",
+  "created_at": "2026-04-24T05:10:32.821174+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 70,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 3.2,
+      "decay": 0.77,
+      "drive": 0.1,
+      "lpCut": 440,
+      "punch": true,
+      "pitchEnd": 30,
+      "sweepTime": 0.2,
+      "pitchStart": 262
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 2,
+      "bRotate": 1,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 64,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 11,
+      "decay": 0.08,
+      "openDecay": 0.58
+     },
+     "muted": false,
+     "pulses": 12,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.4,
+      "lpCut": 20,
+      "lpDec": 0.15,
+      "lpRel": 0.01,
+      "scale": "lydian",
+      "fmIndex": 7.5,
+      "fmRatio": 2,
+      "release": 0.1,
+      "lpEnvAmt": 450,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 32,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "random",
+     "pitchCursor": 36,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 240,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 5,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 23,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "2c0f0d68-38b7-4a20-a777-0d89ccf7e0a5",
+  "name": "23",
+  "created_at": "2026-04-24T05:22:15.931601+00:00",
+  "data": {
+   "bpm": 129,
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0,
+      "lpCut": 18000,
+      "punch": true,
+      "pitchEnd": 40,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.16,
+      "flamTime": 0.01,
+      "openDecay": 0.4,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 14,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "lpCut": 4000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "release": 0.15,
+      "lpEnvAmt": 800,
+      "rootNote": 24
+     },
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.2,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 9,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "d55f13f3-3778-4f1c-8315-959c825a63e0",
+  "name": "24 mod",
+  "created_at": "2026-04-24T06:12:31.688043+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 18,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "3,0": 21,
+    "19,1": 31,
+    "37,1": 100,
+    "39,0": -4
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.42,
+      "drive": 0.13,
+      "lpCut": 18000,
+      "punch": false,
+      "pitchEnd": 26,
+      "sweepTime": 0.068,
+      "pitchStart": 99
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 5,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 64,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "flamTime": 0.013,
+      "openDecay": 0.4,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 32,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": -0.004749606299212596,
+      "lpCut": 719.1089531143459,
+      "lpDec": 0.21,
+      "lpRel": 0.09,
+      "scale": "chromatic",
+      "fmIndex": 2,
+      "fmRatio": 7.681102362204724,
+      "release": 0.19,
+      "lpEnvAmt": 150,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 77,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.19,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 530,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": true,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 17,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "24298fbd-ce50-4bf4-8506-945292899c3b",
+  "name": "25 mod",
+  "created_at": "2026-04-24T06:13:47.567719+00:00",
+  "data": {
+   "bpm": 134,
+   "gfx": {
+    "lim": 1,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0.18
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.42857142857142855,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -60,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 18,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "3,0": 21,
+    "19,1": 31,
+    "37,1": 100,
+    "39,0": 8
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.31,
+      "drive": 0.13,
+      "lpCut": 20,
+      "lpDec": 0.09,
+      "punch": false,
+      "lpEnvAmt": 5300,
+      "pitchEnd": 39,
+      "sweepTime": 0.04,
+      "pitchStart": 99
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 9,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 64,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.08,
+      "flamTime": 0.002,
+      "openDecay": 0.57,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 32,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.05,
+      "glide": 0,
+      "lpCut": 35.11618317076775,
+      "lpDec": 0.21,
+      "lpRel": 0.09,
+      "scale": "chromatic",
+      "fmIndex": 11,
+      "fmRatio": 3.4173228346456694,
+      "oscType": "sawtooth",
+      "release": 0.19,
+      "lpEnvAmt": 150,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 77,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.19,
+      "lpAtk": 0.005,
+      "lpCut": 110,
+      "lpDec": 0.28,
+      "porta": 0.06,
+      "attack": 0.008,
+      "detune": 0,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 530,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "pulses": 6,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 35,
+     "notation": "c2 ~ c#3 ~ c2 ~ c3 ~c#2 ~ c#2 ~ c2 ~ c2 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 6
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "0e89f84d-0e0e-42fd-a050-75bd69c66e41",
+  "name": "26",
+  "created_at": "2026-04-24T06:34:33.706657+00:00",
+  "data": {
+   "bpm": 129,
+   "gfx": {
+    "lim": 1,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0.18
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.42857142857142855,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -60,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "20,1": 8,
+    "28,0": 100,
+    "29,2": 41,
+    "31,1": 100,
+    "35,0": 16,
+    "36,1": 36,
+    "37,1": 100,
+    "40,1": 27
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0.17,
+      "lpCut": 39.219315003381055,
+      "lpDec": 0.09,
+      "punch": true,
+      "lpEnvAmt": 16000,
+      "pitchEnd": 40,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 8,
+      "bRotate": 9,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 22,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.05,
+      "glide": 0,
+      "lpCut": 119.16101518963825,
+      "lpDec": 0.15,
+      "lpRel": 0.43,
+      "scale": "minor",
+      "fmIndex": 8,
+      "fmRatio": 1,
+      "oscType": "sawtooth",
+      "release": 0.73,
+      "lpEnvAmt": 736,
+      "rootNote": 24
+     },
+     "pulses": 7,
+     "rndAmt": 4,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 18,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 73,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.2,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 9,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 6
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "319a8212-956f-4ab7-93f6-475d503525a1",
+  "name": "27",
+  "created_at": "2026-04-24T06:44:23.913264+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 23,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 4.3,
+      "decay": 0.38,
+      "drive": 0.62,
+      "lpCut": 110,
+      "lpDec": 0.01,
+      "punch": true,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 25,
+      "sweepTime": 0.076,
+      "pitchStart": 180
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 59,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.04,
+      "flamTime": 0.013,
+      "openDecay": 0.4,
+      "flamLayers": 2
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 59,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 29,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 719.1089531143459,
+      "lpDec": 0.21,
+      "lpRel": 0.09,
+      "scale": "mixolydian",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "oscType": "sine",
+      "release": 0.19,
+      "lpEnvAmt": 150,
+      "rootNote": 36
+     },
+     "pulses": 17,
+     "rndAmt": 59,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 77,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.33,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 0,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 59,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 25,
+     "notation": "c2 c2 c4 g#2 c2 c#3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "a6c4f654-2027-46fc-a75d-7c7369292c32",
+  "name": "28",
+  "created_at": "2026-04-24T06:58:01.988721+00:00",
+  "data": {
+   "bpm": 134,
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "42,2": 47,
+    "44,2": 2,
+    "45,2": 74,
+    "47,2": 23,
+    "50,2": 11,
+    "51,2": 42,
+    "54,1": 40
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.26,
+      "drive": 0.1,
+      "lpCut": 350,
+      "lpDec": 0.01,
+      "punch": true,
+      "lpEnvAmt": 2300,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "flamTime": 0.013,
+      "openDecay": 0.4,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 8,
+      "bPulses": 9,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 7.726055118110236,
+      "decay": 0.05436062992125985,
+      "glide": 0.2175196850393701,
+      "lpCut": 1702.4094463797107,
+      "lpDec": 0.3938732283464567,
+      "lpRel": 0.7920614173228346,
+      "scale": "mixolydian",
+      "fmIndex": 2.5,
+      "fmRatio": 6.496181102362205,
+      "oscType": "square",
+      "release": 0.6181937007874017,
+      "lpEnvAmt": 0,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 55,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.01,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 2,
+      "bRotate": 4,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "2685e5df-0262-4486-a043-0305ef1c07ed",
+  "name": "13may mod",
+  "created_at": "2026-05-13T15:16:56.118946+00:00",
+  "data": {
+   "bpm": 140,
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "20,1": 8,
+    "29,2": 41,
+    "31,1": 100,
+    "35,0": 16,
+    "36,1": 36,
+    "37,1": 100,
+    "40,1": 27,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0.17,
+      "lpCut": 18000,
+      "lpDec": 0.15,
+      "punch": true,
+      "lpEnvAmt": 8000,
+      "pitchEnd": 40,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 1,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 10,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 8,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.07028661417322835,
+      "flamTime": 0.029641259842519682,
+      "openDecay": 0.4,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 22,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 4000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 1.2270866141732284,
+      "oscType": "sine",
+      "release": 0.15,
+      "lpEnvAmt": 800,
+      "rootNote": 24
+     },
+     "pulses": 10,
+     "rndAmt": 4,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.4,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.27400314960629923,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  ~ c3 ~ b3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "d0f95c4c-284e-4891-9456-342991fb6cde",
+  "name": "13 may mod 2",
+  "created_at": "2026-05-13T15:26:16.544614+00:00",
+  "data": {
+   "bpm": 140,
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0.17,
+      "lpCut": 18000,
+      "lpDec": 0.15,
+      "punch": true,
+      "lpEnvAmt": 8000,
+      "pitchEnd": 40,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "bPulses": 8,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.01,
+      "flamTime": 0.016129448818897635,
+      "openDecay": 0.6374354330708661,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 30,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 12000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "minor",
+      "fmIndex": 15,
+      "fmRatio": 1.2270866141732284,
+      "oscType": "sine",
+      "release": 0.9,
+      "lpEnvAmt": 800,
+      "rootNote": 24
+     },
+     "pulses": 10,
+     "rndAmt": 4,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.4,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.33181811023622043,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  ~ c3 ~ b3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "356d0c95-12d2-4afa-90c4-1a8220f0d775",
+  "name": "12 may 3",
+  "created_at": "2026-05-13T15:55:18.480162+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.42857142857142855,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -45.5,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 23,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "28,3": 69,
+    "64,1": 42,
+    "67,1": -21,
+    "77,0": 20
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 4.3,
+      "decay": 0.38,
+      "drive": 0.62,
+      "lpCut": 110,
+      "lpDec": 0.01,
+      "punch": true,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 25,
+      "sweepTime": 0.076,
+      "pitchStart": 180
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 100,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "subDiv": "STEP",
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.04,
+      "flamTime": 0.013,
+      "openDecay": 0.4,
+      "flamLayers": 2
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 59,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 29,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 198.78622871716232,
+      "lpDec": 0.21,
+      "lpRel": 0.09,
+      "scale": "mixolydian",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "oscType": "sine",
+      "release": 0.19,
+      "lpEnvAmt": 150,
+      "rootNote": 36
+     },
+     "pulses": 0,
+     "rndAmt": 59,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 77,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.259707874015748,
+      "lpAtk": 0.005,
+      "lpCut": 20,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 5.4070866141732274,
+      "fmRatio": 2.574803149606299,
+      "release": 0.2,
+      "lpEnvAmt": 626,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 3,
+      "subDiv": "STEP",
+      "bPulses": 6,
+      "bRotate": 5,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 15,
+     "rndAmt": 59,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 25,
+     "notation": "c2 c2 c4 g#2 c2 c#3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "00dba4fa-6bbe-4ae3-9bed-6d7941f56683",
+  "name": "esto que brilla",
+  "created_at": "2026-05-20T00:30:11.735836+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.42857142857142855,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -45.5,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "20,1": 8,
+    "29,2": 41,
+    "31,1": 100,
+    "35,0": 16,
+    "37,1": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.34,
+      "drive": 0,
+      "lpCut": 20,
+      "lpDec": 0.13,
+      "punch": false,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 46,
+      "sweepTime": 0.024,
+      "pitchStart": 96
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 5,
+      "bRotate": 9,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.04,
+      "flamTime": 0.009,
+      "openDecay": 0.586759842519685,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 9,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 8,
+     "euSteps": 22,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 13,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.2,
+      "decay": 0.37,
+      "glide": 0,
+      "lpCut": 40.9433086877185,
+      "lpDec": 0.72,
+      "lpRel": 0.9,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 7,
+      "oscType": "sine",
+      "release": 0.23,
+      "lpEnvAmt": 359,
+      "rootNote": 20
+     },
+     "pulses": 3,
+     "rndAmt": 4,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 34,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "random",
+     "pitchCursor": 43,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.05,
+      "lpAtk": 0.005,
+      "lpCut": 20,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.27400314960629923,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  ~ c3 ~ b3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "256bf71c-0362-44a0-aad0-27693169fb79",
+  "name": "25 may",
+  "created_at": "2026-05-25T21:54:07.476413+00:00",
+  "data": {
+   "bpm": 160,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0,
+     "size": 0.75
+    },
+    "delay": {
+     "mix": 0,
+     "time": 0.375,
+     "feedback": 0.35
+    }
+   },
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "20,1": 8,
+    "29,2": 41,
+    "31,1": 100,
+    "35,0": 16,
+    "37,1": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.34,
+      "drive": 0,
+      "lpCut": 20,
+      "lpDec": 0.13,
+      "punch": false,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 46,
+      "sweepTime": 0.024,
+      "pitchStart": 96
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 2196.1856275740997,
+      "color": 0,
+      "decay": 0.11,
+      "flamTime": 0.027,
+      "openDecay": 0.13,
+      "flamLayers": 2
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "bPulses": 2,
+      "bRotate": 1,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.2,
+      "decay": 0.05,
+      "glide": 0,
+      "lpCut": 657.5072991124472,
+      "lpDec": 0.72,
+      "lpRel": 0.9,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 7,
+      "oscType": "sawtooth",
+      "release": 0.07,
+      "lpEnvAmt": 359,
+      "rootNote": 19
+     },
+     "pulses": 10,
+     "rndAmt": 4,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 34,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "random",
+     "pitchCursor": 36,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.15,
+      "lpAtk": 0.005,
+      "lpCut": 20,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.66,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 26,
+     "notation": "b2 c3 b3 f#2 b3 c2 b2 f#2",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sD": 0,
+     "bitOn": false,
+     "revMix": 0,
+     "revSize": 0.3,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "920e7cae-a166-446b-967a-1f84a412883c",
+  "name": "25 may 2",
+  "created_at": "2026-05-25T22:10:29.848387+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -45.5,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "20,1": 8,
+    "29,2": 41,
+    "31,1": 100,
+    "35,0": 16,
+    "37,1": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.34,
+      "drive": 0,
+      "lpCut": 20,
+      "lpDec": 0.13,
+      "punch": false,
+      "lpEnvAmt": 1500,
+      "pitchEnd": 46,
+      "sweepTime": 0.024,
+      "pitchStart": 96
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 6,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 6190.259974169559,
+      "color": 0,
+      "decay": 0.1,
+      "flamTime": 0.039,
+      "openDecay": 0.13,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 9,
+     "ratioIdx": 5,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 1,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "lpQ": 0.2,
+      "decay": 0.09,
+      "glide": 0,
+      "lpCut": 323.2405146656486,
+      "lpDec": 1.46,
+      "lpRel": 0.68,
+      "scale": "minor",
+      "fmIndex": 7.5,
+      "fmRatio": 6,
+      "oscType": "sawtooth",
+      "release": 0.35,
+      "lpEnvAmt": 160,
+      "rootNote": 19
+     },
+     "pulses": 10,
+     "rndAmt": 4,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 34,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 36,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.15,
+      "lpAtk": 0.005,
+      "lpCut": 7445.009685791738,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 3.75,
+      "fmRatio": 4,
+      "release": 0.66,
+      "lpEnvAmt": 366,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 8,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 26,
+     "notation": "b2 c3 b3 f#2 b3 c2 b2 f#2",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "c0b6990d-afdb-44f9-a9d6-3dcb6706eaf9",
+  "name": "25 may 3",
+  "created_at": "2026-05-25T22:13:40.925217+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.75
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0.23
+    },
+    "fxbus": {
+     "sc": true,
+     "atk": 0.003,
+     "rel": 0.23,
+     "thr": -45.5,
+     "ratio": 6.5,
+     "makeup": 0
+    }
+   },
+   "swing": 24,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0.17,
+      "lpCut": 18000,
+      "lpDec": 0.15,
+      "punch": true,
+      "lpEnvAmt": 8000,
+      "pitchEnd": 32,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4500.233938755237,
+      "color": 0,
+      "decay": 0.04,
+      "flamTime": 0.016129448818897635,
+      "openDecay": 0.6374354330708661,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 13,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 86
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.17,
+      "glide": 0,
+      "lpCut": 31.90325806851581,
+      "lpDec": 0.25,
+      "lpRel": 0.4,
+      "scale": "chromatic",
+      "fmIndex": 15,
+      "fmRatio": 1.2270866141732284,
+      "oscType": "sine",
+      "release": 0.9,
+      "lpEnvAmt": 800,
+      "rootNote": 24
+     },
+     "pulses": 10,
+     "rndAmt": 4,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.4,
+      "lpAtk": 0.005,
+      "lpCut": 33.48167333819994,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.33181811023622043,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  ~ c3 ~ b3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "8efb90b3-03be-4ce1-aa81-e477bdd7ca1c",
+  "name": "26 may 1",
+  "created_at": "2026-05-26T02:42:33.182613+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0.69
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.38,
+      "drive": 0.17,
+      "lpCut": 18000,
+      "lpDec": 0.15,
+      "punch": true,
+      "lpEnvAmt": 8000,
+      "pitchEnd": 32,
+      "sweepTime": 0.02,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 526.6805179774179,
+      "color": 0,
+      "decay": 0.01,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.29,
+      "glide": 0.295,
+      "lpCut": 31.90325806851581,
+      "lpDec": 0.32,
+      "lpRel": 2.16,
+      "scale": "chromatic",
+      "fmIndex": 5.5,
+      "fmRatio": 2,
+      "oscType": "sine",
+      "release": 0.19,
+      "lpEnvAmt": 486,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 62,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.4,
+      "lpAtk": 0.005,
+      "lpCut": 33.48167333819994,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4.595275590551181,
+      "fmRatio": 2.1224409448818897,
+      "release": 0.33181811023622043,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  ~ c3 ~ b3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "a4b1d601-c592-4fb3-9db8-25b22ee7ee8c",
+  "name": "26 may 2",
+  "created_at": "2026-05-26T02:47:34.040011+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.42857142857142855,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.12,
+      "lpCut": 241.14749456476318,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 10700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 526.6805179774179,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.29,
+      "glide": 0.295,
+      "lpCut": 74.2251359969122,
+      "lpDec": 0.4,
+      "lpRel": 2.16,
+      "scale": "chromatic",
+      "fmIndex": 9.5,
+      "fmRatio": 2,
+      "oscType": "sawtooth",
+      "release": 0.36,
+      "lpEnvAmt": 486,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 83,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.01,
+      "lpAtk": 0.005,
+      "lpCut": 33.48167333819994,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 1,
+      "fmRatio": 1,
+      "release": 0.06,
+      "lpEnvAmt": 217,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  b2 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "084c566e-58bd-46ba-ba0e-e075ebf6b054",
+  "name": "26 may 3",
+  "created_at": "2026-05-26T02:48:21.357699+00:00",
+  "data": {
+   "bpm": 138,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": true,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.12,
+      "lpCut": 241.14749456476318,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 10700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 526.6805179774179,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.05,
+      "glide": 0.295,
+      "lpCut": 137.1682260307811,
+      "lpDec": 0.18,
+      "lpRel": 0.38,
+      "scale": "chromatic",
+      "fmIndex": 9.5,
+      "fmRatio": 2,
+      "oscType": "square",
+      "release": 0.06,
+      "lpEnvAmt": 517,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 83,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.13,
+      "lpAtk": 0.005,
+      "lpCut": 33.48167333819994,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 1,
+      "fmRatio": 1,
+      "release": 0.06,
+      "lpEnvAmt": 217,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  b2 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "2cdd926c-a2bd-49c3-85b3-c432bdebad6b",
+  "name": "26 may 4",
+  "created_at": "2026-05-26T02:51:19.333338+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.777,
+     "subDiv": "1/4",
+     "feedback": 0.54
+    },
+    "fxbus": {
+     "sc": true,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.5,
+      "drive": 0.12,
+      "lpCut": 241.14749456476318,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 10700,
+      "pitchEnd": 32,
+      "sweepTime": 0.064,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 14,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 526.6805179774179,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 3
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.05,
+      "glide": 0.295,
+      "lpCut": 137.1682260307811,
+      "lpDec": 0.18,
+      "lpRel": 0.38,
+      "scale": "chromatic",
+      "fmIndex": 9.5,
+      "fmRatio": 2,
+      "oscType": "square",
+      "release": 0.06,
+      "lpEnvAmt": 517,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 83,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.13,
+      "lpAtk": 0.005,
+      "lpCut": 33.48167333819994,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 1,
+      "fmRatio": 1,
+      "release": 0.06,
+      "lpEnvAmt": 217,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  b2 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "49a0f002-0a9f-4abb-bbe3-93a2cade418a",
+  "name": "26 may 5",
+  "created_at": "2026-05-26T13:33:25.314964+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0.69
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.51,
+      "drive": 0.12,
+      "lpCut": 241.14749456476318,
+      "lpDec": 0.38,
+      "punch": true,
+      "lpEnvAmt": 0,
+      "pitchEnd": 39,
+      "sweepTime": 0.06,
+      "pitchStart": 259
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 14,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 3,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 11274.566041136155,
+      "color": 0,
+      "decay": 0.05,
+      "flamTime": 0.002,
+      "openDecay": 0.51,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.17,
+      "glide": 0.295,
+      "lpCut": 91.67058297921251,
+      "lpDec": 0.19,
+      "lpRel": 0.38,
+      "scale": "chromatic",
+      "fmIndex": 11,
+      "fmRatio": 2,
+      "oscType": "square",
+      "release": 0.36,
+      "lpEnvAmt": 1000,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 83,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.13,
+      "lpAtk": 0.005,
+      "lpCut": 31.5345439762483,
+      "lpDec": 0.08,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 14,
+      "fmRatio": 3.25,
+      "release": 0.06,
+      "lpEnvAmt": 639,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  b2 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "e003b3b8-59df-4c4d-8e24-cca085350993",
+  "name": "5JUN",
+  "created_at": "2026-06-04T23:59:52.343861+00:00",
+  "data": {
+   "bpm": 140,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0.69
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "52,1": 17,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.51,
+      "drive": 0.12,
+      "lpCut": 241.14749456476318,
+      "lpDec": 0.38,
+      "punch": true,
+      "lpEnvAmt": 0,
+      "pitchEnd": 39,
+      "sweepTime": 0.06,
+      "pitchStart": 259
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 14,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 1,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 32,
+     "euSteps": 12,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 3,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 11274.566041136155,
+      "color": 0,
+      "decay": 0.19,
+      "flamTime": 0.002,
+      "openDecay": 0.51,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 17,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.09,
+      "glide": 0.295,
+      "lpCut": 34.22903856297579,
+      "lpDec": 0.32,
+      "lpRel": 0.38,
+      "scale": "phrygian",
+      "fmIndex": 12.499212598425196,
+      "fmRatio": 2,
+      "oscType": "square",
+      "release": 0.16,
+      "lpEnvAmt": 375,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 74.23,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.13,
+      "lpAtk": 0.001,
+      "lpCut": 31.5345439762483,
+      "lpDec": 0.1,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 14,
+      "fmRatio": 3.25,
+      "release": 0.06,
+      "lpEnvAmt": 639,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  b2 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "8b22c846-e454-4256-8d93-040fa0f1c57a",
+  "name": "23 JUL",
+  "created_at": "2026-07-23T04:17:01.975845+00:00",
+  "data": {
+   "bpm": 134,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0.69
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.1,
+      "decay": 0.47,
+      "drive": 0.1,
+      "lpCut": 13980,
+      "lpDec": 0.38,
+      "punch": true,
+      "lpEnvAmt": 0,
+      "pitchEnd": 37,
+      "sweepTime": 0.08,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 6,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": true,
+      "count": 3,
+      "subDiv": "STEP",
+      "bPulses": 3,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 11274.566041136155,
+      "color": 0,
+      "decay": 0.19,
+      "flamTime": 0.002,
+      "openDecay": 0.51,
+      "flamLayers": 1
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 4,
+      "subDiv": "1/32",
+      "bPulses": 9,
+      "bRotate": 10,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.09,
+      "glide": 0.295,
+      "lpCut": 9650.34812127782,
+      "lpDec": 0.32,
+      "lpRel": 0.38,
+      "scale": "mixolydian",
+      "fmIndex": 9,
+      "fmRatio": 6.5,
+      "oscType": "square",
+      "release": 0.24,
+      "lpEnvAmt": 375,
+      "rootNote": 24
+     },
+     "pulses": 17,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 31,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 74.23,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.55,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.06,
+      "lpEnvAmt": 2400,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "13672933-0fb3-4629-9863-c2fb45ac3edf",
+  "name": "23 JULIO 2",
+  "created_at": "2026-07-23T04:22:08.870001+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": true,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 1,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0.7,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 1,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.12,
+      "lpCut": 10516.890371948683,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 10700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 141
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 1,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 6,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 526.6805179774179,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.002,
+      "openDecay": 0.01,
+      "flamLayers": 4
+     },
+     "muted": true,
+     "pulses": 7,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 17,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 2,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": true,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.29,
+      "glide": 0.295,
+      "lpCut": 74.2251359969122,
+      "lpDec": 0.4,
+      "lpRel": 2.16,
+      "scale": "chromatic",
+      "fmIndex": 9.5,
+      "fmRatio": 2,
+      "oscType": "sawtooth",
+      "release": 0.36,
+      "lpEnvAmt": 486,
+      "rootNote": 12
+     },
+     "pulses": 10,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 83,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.15,
+      "lpAtk": 0.005,
+      "lpCut": 163.81476857397726,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 40,
+      "voices": 6,
+      "fmIndex": 1,
+      "fmRatio": 1,
+      "release": 0.54,
+      "lpEnvAmt": 217,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 2,
+      "subDiv": "STEP",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  C4 - - B4 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "93aff35f-e52d-489f-8086-dae53b43facd",
+  "name": "24 jul",
+  "created_at": "2026-07-23T22:57:55.900311+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.55
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": 0,
+     "ratio": 4,
+     "makeup": 0
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.1,
+      "lpCut": 177.55865278907652,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 8700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 70
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "1/16",
+      "bPulses": 5,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 4,
+      "subDiv": "1/16",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4377.174805042958,
+      "color": 0,
+      "decay": 0.05,
+      "flamTime": 0.006,
+      "openDecay": 0.29,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 14,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 5,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.17,
+      "glide": 0.295,
+      "lpCut": 182.9238478484459,
+      "lpDec": 0.14,
+      "lpRel": 0.53,
+      "scale": "chromatic",
+      "fmIndex": 11.5,
+      "fmRatio": 4.5,
+      "oscType": "sawtooth",
+      "release": 0.31,
+      "lpEnvAmt": 697,
+      "rootNote": 12
+     },
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 127,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.05,
+      "lpAtk": 0.005,
+      "lpCut": 45.720847753964634,
+      "lpDec": 0.42,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 15,
+      "voices": 5,
+      "fmIndex": 0,
+      "fmRatio": 1,
+      "release": 0.67,
+      "lpEnvAmt": 361,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "1/6",
+      "bPulses": 2,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 9,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  C4 - - B4 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "98c4c8e3-58d1-400c-aa98-5617b6d75c1f",
+  "name": "24 jul 2",
+  "created_at": "2026-07-23T23:00:23.384538+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.55
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": 0,
+     "ratio": 4,
+     "makeup": 0
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.1,
+      "lpCut": 177.55865278907652,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 8700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 70
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "1/16",
+      "bPulses": 5,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 4,
+      "subDiv": "1/16",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4377.174805042958,
+      "color": 0,
+      "decay": 0.05,
+      "flamTime": 0.006,
+      "openDecay": 0.29,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 14,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 5,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.17,
+      "glide": 0.295,
+      "lpCut": 404.3533852177121,
+      "lpDec": 0.08,
+      "lpRel": 1.28,
+      "scale": "chromatic",
+      "fmIndex": 11.5,
+      "fmRatio": 4.5,
+      "oscType": "square",
+      "release": 0.54,
+      "lpEnvAmt": 697,
+      "rootNote": 12
+     },
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 127,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.05,
+      "lpAtk": 0.005,
+      "lpCut": 45.720847753964634,
+      "lpDec": 0.78,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 15,
+      "voices": 5,
+      "fmIndex": 0,
+      "fmRatio": 1,
+      "release": 0.67,
+      "lpEnvAmt": 361,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "1/6",
+      "bPulses": 2,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 9,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  C4 - - B4 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "3ec36eda-fe5f-4018-b4c3-e7e69e338fa7",
+  "name": "24 jul 3",
+  "created_at": "2026-07-23T23:03:20.282971+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.55
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": 0,
+     "ratio": 4,
+     "makeup": 0
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.1,
+      "lpCut": 177.55865278907652,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 8700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 70
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "1/16",
+      "bPulses": 1,
+      "bRotate": 9,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 6,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 4,
+      "subDiv": "1/16",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4377.174805042958,
+      "color": 0,
+      "decay": 0.05,
+      "flamTime": 0.006,
+      "openDecay": 0.29,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 16,
+     "rndAmt": 0,
+     "rotate": 14,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 5,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.17,
+      "glide": 0.295,
+      "lpCut": 47.432980458179735,
+      "lpDec": 0.14,
+      "lpRel": 0.53,
+      "scale": "chromatic",
+      "fmIndex": 13,
+      "fmRatio": 4,
+      "oscType": "square",
+      "release": 0.31,
+      "lpEnvAmt": 1000,
+      "rootNote": 12
+     },
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 127,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.05,
+      "lpAtk": 0.005,
+      "lpCut": 45.720847753964634,
+      "lpDec": 0.42,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 15,
+      "voices": 5,
+      "fmIndex": 0,
+      "fmRatio": 1,
+      "release": 0.67,
+      "lpEnvAmt": 361,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 2,
+      "subDiv": "1/6",
+      "bPulses": 2,
+      "bRotate": 3,
+      "subdivide": false
+     },
+     "muted": true,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 9,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b1  b3  b2 -  C4 - - B4 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "dcd66599-4b73-43c4-baa5-226422c9acd1",
+  "name": "24 jul 4",
+  "created_at": "2026-07-23T23:09:23.495389+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revB": {
+     "mix": 0,
+     "dest": "M",
+     "size": 0
+    },
+    "revC": {
+     "mix": 0,
+     "dest": "B",
+     "size": 0.55
+    },
+    "delay": {
+     "mix": 0,
+     "dest": "B",
+     "sync": true,
+     "time": 0.957,
+     "subDiv": "1/4",
+     "feedback": 0
+    },
+    "fxbus": {
+     "sc": false,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": 0,
+     "ratio": 4,
+     "makeup": 0
+    }
+   },
+   "swing": 37,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {
+    "2,0": -28,
+    "21,1": 11,
+    "35,0": 16,
+    "43,2": 83,
+    "45,2": 56,
+    "47,2": 100,
+    "28,10": -44,
+    "67,10": 94,
+    "68,10": 11
+   },
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.39,
+      "drive": 0.1,
+      "lpCut": 177.55865278907652,
+      "lpDec": 0.04,
+      "punch": true,
+      "lpEnvAmt": 8700,
+      "pitchEnd": 32,
+      "sweepTime": 0.052,
+      "pitchStart": 70
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "1/16",
+      "bPulses": 5,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 4,
+      "subDiv": "1/16",
+      "bPulses": 2,
+      "bRotate": 9,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 4377.174805042958,
+      "color": 0,
+      "decay": 0.05,
+      "flamTime": 0.006,
+      "openDecay": 0.29,
+      "flamLayers": 4
+     },
+     "muted": false,
+     "pulses": 4,
+     "rndAmt": 0,
+     "rotate": 14,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "STEP",
+      "bPulses": 5,
+      "bRotate": 2,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 0.1,
+      "decay": 0.17,
+      "glide": 0.295,
+      "lpCut": 182.9238478484459,
+      "lpDec": 0.14,
+      "lpRel": 0.53,
+      "scale": "chromatic",
+      "fmIndex": 11.5,
+      "fmRatio": 4.5,
+      "oscType": "sawtooth",
+      "release": 0.31,
+      "lpEnvAmt": 697,
+      "rootNote": 12
+     },
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 18,
+     "seqLen": 16,
+     "euSteps": 23,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 127,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.05,
+      "lpAtk": 0.01,
+      "lpCut": 45.720847753964634,
+      "lpDec": 0.14,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 3,
+      "voices": 5,
+      "fmIndex": 2.5,
+      "fmRatio": 1,
+      "release": 0.09,
+      "lpEnvAmt": 296,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": true,
+      "count": 5,
+      "subDiv": "1/6",
+      "bPulses": 2,
+      "bRotate": 4,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 9,
+     "rndAmt": 0,
+     "rotate": 12,
+     "seqLen": 16,
+     "euSteps": 14,
+     "notation": "b2  b3  b2 -  C4 - - e4 ",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 1,
+     "sB": 1,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": true,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 1,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {
+    "3": "replace",
+    "19": "replace",
+    "37": "replace",
+    "39": "replace",
+    "40": "replace"
+   }
+  }
+ },
+ {
+  "id": "1fe340d6-0058-4cbf-9833-dfc0688ca3c5",
+  "name": "dos no",
+  "created_at": "2026-08-30T22:38:25.582542+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0.7,
+     "dest": "M",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0.7,
+     "dest": "M",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0.7,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0.7,
+     "dest": "B",
+     "sync": true,
+     "time": 0.43795620437956206,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": true,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.3,
+      "drive": 0.5,
+      "lpCut": 104.45059672865148,
+      "lpDec": 0.24,
+      "punch": true,
+      "lpEnvAmt": 1000,
+      "pitchEnd": 38,
+      "sweepTime": 0.016,
+      "pitchStart": 229
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 24,
+     "euSteps": 24,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.09,
+      "flamTime": 0.018,
+      "openDecay": 0.4,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 8,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 4000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "oscType": "sine",
+      "release": 0.15,
+      "lpEnvAmt": 800,
+      "rootNote": 60
+     },
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.2,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {}
+  }
+ },
+ {
+  "id": "86e4d5ac-16f5-48db-8a40-39038e256167",
+  "name": "dos",
+  "created_at": "2026-08-30T22:41:13.362159+00:00",
+  "data": {
+   "bpm": 137,
+   "gfx": {
+    "lim": 0,
+    "mhp": 0,
+    "mlp": 1,
+    "sat": {
+     "on": false,
+     "amt": 0
+    },
+    "revA": {
+     "mix": 0.7,
+     "dest": "M",
+     "size": 0.15
+    },
+    "revB": {
+     "mix": 0.7,
+     "dest": "M",
+     "size": 0.75
+    },
+    "revC": {
+     "mix": 0.7,
+     "dest": "B",
+     "size": 1
+    },
+    "delay": {
+     "mix": 0.7,
+     "dest": "B",
+     "sync": true,
+     "time": 0.43795620437956206,
+     "subDiv": "1/4",
+     "feedback": 0.35
+    },
+    "fxbus": {
+     "sc": true,
+     "atk": 0.003,
+     "rel": 0.25,
+     "thr": -18,
+     "ratio": 4,
+     "makeup": 6
+    }
+   },
+   "swing": 0,
+   "ccNums": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "matrix": {},
+   "tracks": [
+    {
+     "id": 0,
+     "kick": {
+      "lpQ": 0.7,
+      "decay": 0.3,
+      "drive": 0.5,
+      "lpCut": 104.45059672865148,
+      "lpDec": 0.24,
+      "punch": true,
+      "lpEnvAmt": 1000,
+      "pitchEnd": 38,
+      "sweepTime": 0.016,
+      "pitchStart": 229
+     },
+     "midi": {
+      "ch": 10,
+      "vel": 100,
+      "note": 36
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 2,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 24,
+     "euSteps": 24,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 1,
+     "midi": {
+      "ch": 10,
+      "vel": 80,
+      "note": 42
+     },
+     "burst": {
+      "bite": false,
+      "count": 8,
+      "subDiv": "1/6",
+      "bPulses": 1,
+      "bRotate": 0,
+      "subdivide": true
+     },
+     "hihat": {
+      "open": false,
+      "tone": 8000,
+      "color": 0,
+      "decay": 0.07,
+      "flamTime": 0.018,
+      "openDecay": 0.4,
+      "flamLayers": 1
+     },
+     "muted": false,
+     "pulses": 24,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 48,
+     "euSteps": 34,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    },
+    {
+     "id": 2,
+     "midi": {
+      "ch": 1,
+      "vel": 90,
+      "note": 60
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "synth": {
+      "lpQ": 2,
+      "decay": 0.2,
+      "glide": 0,
+      "lpCut": 4000,
+      "lpDec": 0.3,
+      "lpRel": 0.4,
+      "scale": "minor",
+      "fmIndex": 3,
+      "fmRatio": 2,
+      "oscType": "sine",
+      "release": 0.15,
+      "lpEnvAmt": 800,
+      "rootNote": 60
+     },
+     "pulses": 3,
+     "rndAmt": 0,
+     "rotate": 2,
+     "seqLen": 16,
+     "euSteps": 16,
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "melodyMode": "cursor",
+     "pitchCursor": 64,
+     "probability": 100
+    },
+    {
+     "id": 3,
+     "midi": {
+      "ch": 2,
+      "vel": 85,
+      "note": 60
+     },
+     "poly": {
+      "lpQ": 3.5,
+      "decay": 0.2,
+      "lpAtk": 0.005,
+      "lpCut": 800,
+      "lpDec": 0.3,
+      "porta": 0,
+      "attack": 0.008,
+      "detune": 4,
+      "voices": 3,
+      "fmIndex": 4,
+      "fmRatio": 1.5,
+      "release": 0.2,
+      "lpEnvAmt": 800,
+      "unisonMode": true,
+      "chordIntervals": [
+       0,
+       7,
+       12
+      ]
+     },
+     "burst": {
+      "bite": false,
+      "count": 1,
+      "subDiv": "STEP",
+      "bPulses": 0,
+      "bRotate": 0,
+      "subdivide": false
+     },
+     "muted": false,
+     "pulses": 0,
+     "rndAmt": 0,
+     "rotate": 0,
+     "seqLen": 16,
+     "euSteps": 16,
+     "notation": "c3 ~ e3 ~ g3 ~ b3 ~",
+     "ratioIdx": 4,
+     "rndLocked": false,
+     "probability": 100
+    }
+   ],
+   "chSends": [
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    },
+    {
+     "sA": 0,
+     "sB": 0,
+     "sC": 0,
+     "sD": 0,
+     "bitOn": false,
+     "bitDepth": 16
+    }
+   ],
+   "masterLv": 0.85,
+   "matrixMode": {}
+  }
+ }
+]
