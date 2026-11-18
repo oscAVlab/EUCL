@@ -1,7 +1,7 @@
 {
   "name": "eucl-desktop",
   "productName": "EUCL",
-  "version": "0.2.2",
+  "version": "0.2.1",
   "description": "EUCL · Seq Euclidean x4 — app de escritorio (osc[AV]lab), motor Chrome",
   "main": "main.js",
   "private": true,

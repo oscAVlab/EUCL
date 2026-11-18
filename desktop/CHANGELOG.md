@@ -1,9 +1,5 @@
 # EUCL app — cambios
 
-## v0.2.2 — 2026-11-19
-- Web v2.3: interfaz en pestañas que caben en una ventana, como el Rack: SECUENCIADOR (patrón, anillo, burst de las 4 pistas), INSTRUMENTOS (kick, hihat, mono, poly), MIXER (consola de 4 tiras + retornos, COMP BUS y master), MOD (matriz CC y referencia). Mute T1–T4 siempre a la vista; la pestaña se recuerda.
-- Web: si el navegador no tiene MIDI (Safari) o lo bloquea, los selectores lo dicen.
-
 ## v0.2.1 — 2026-11-18
 - MIDI nativo (CoreMIDI) para todo: además del puerto virtual EUCL aparecen todas las salidas y entradas del Mac (interfaces, IAC, Ableton, Maschine…). Antes solo se veía el virtual porque dependía del Web MIDI de Chrome.
 - Las salidas físicas también van por el scheduler de tiempo real (misma precisión que el virtual).
