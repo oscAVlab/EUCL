@@ -1,0 +1,20 @@
+{
+  "name": "eucl-desktop",
+  "productName": "EUCL",
+  "version": "0.2.1",
+  "description": "EUCL · Seq Euclidean x4 — app de escritorio (osc[AV]lab), motor Chrome",
+  "main": "main.js",
+  "private": true,
+  "author": "osc[AV]lab",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/scheduler-test.js"
+  },
+  "dependencies": {
+    "@julusian/midi": "3.9.0"
+  },
+  "devDependencies": {
+    "electron": "38.8.4",
+    "@electron/packager": "20.3.0"
+  }
+}
