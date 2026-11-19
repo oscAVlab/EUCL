@@ -19,7 +19,7 @@
   --text:#ECE8DF;--text-dim:#8A867C;--text-mid:#B5B0A5;
   --mono:'Roboto Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;
   --cond:'Roboto Condensed','Roboto','Arial Narrow',Arial,sans-serif;
-  --t1:#00B3A4;--t2:#A8E6DF;--t3:#ECE8DF;--t4:#E0A33A;
+  --t1:#E0A33A;--t2:#A6A04A;--t3:#3F9468;--t4:#A6F23A;
   --fx-dly:#A8E6DF;--fx-bit:#B5B0A5;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -560,14 +560,41 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
 #tabFx>.main:first-child{padding-top:8px;}
 @media (max-width:1699px){.side-bus{flex-basis:262px;width:262px;padding-right:10px!important;}.side-bus .rack-sec{padding:6px 7px;}.side-bus .kg{min-width:32px;}.side-bus .kn{width:26px;height:26px;}.tr-mix-in{max-width:300px;}}
 @media (max-width:1099px){.tracks-split{flex-direction:column;}.side-bus{width:auto;flex-basis:auto;padding:8px 16px!important;}}
+
+/* ══ v2.5 · pulido: perillas, divisores, meters, casilla MOD ══ */
+.kn-trk{stroke:#25231f;stroke-width:2.2;}
+.kn-val{stroke-width:2.2;}
+.kn-dot{fill:#4a473f;}
+.kn-sh{fill:rgba(0,0,0,.55);}
+.kn-cap{fill:url(#knCapG);stroke:#47443c;stroke-width:.8;}
+.kn-rim{fill:none;stroke:rgba(255,255,255,.04);stroke-width:.8;}
+.kn:hover .kn-cap,.kn.act .kn-cap{stroke:#6a665b;}
+.kn-ptr{stroke:#F4F1EA;stroke-width:1.9;}
+.kn.act .kn-ptr{stroke:var(--kc,var(--turq));}
+.kg-l{color:#8d887d;}
+.track{box-shadow:inset 0 1px 0 rgba(255,255,255,.025);}
+.tr-sec{border-left-color:#302D27;}
+.tr-h{display:flex;align-items:center;gap:6px;}
+.tr-h::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--kc,var(--turq));opacity:.8;}
+.mtr{border-radius:1px;}
+.mtr.fxm{width:5px;height:auto;min-height:34px;align-self:stretch;margin-left:4px;}
+.side-bus .mx-row{align-items:flex-start;}
+.ld-mx{display:flex;align-items:center;gap:6px;font-size:9.5px;letter-spacing:.12em;color:var(--text-dim);cursor:pointer;user-select:none;}
+.ld-mx input{position:absolute;opacity:0;width:0;height:0;}
+.ld-mx i{width:11px;height:11px;border:1px solid var(--border2);background:var(--bg3);border-radius:2px;position:relative;}
+.ld-mx input:checked+i{border-color:var(--turq-deep);background:var(--turq-deep);}
+.ld-mx input:checked+i::after{content:"";position:absolute;left:3px;top:0;width:3px;height:6px;border:solid var(--paper);border-width:0 1.5px 1.5px 0;transform:rotate(45deg);}
+.ld-mx input:focus-visible+i{outline:1px solid var(--turq);}
+.tr-mix-in .mtr.ch{width:6px;height:auto;min-height:0;align-self:stretch;margin-top:2px;}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><radialGradient id="knCapG" cx="40%" cy="30%" r="75%"><stop offset="0" stop-color="#383630"/><stop offset=".55" stop-color="#22211d"/><stop offset="1" stop-color="#141311"/></radialGradient></defs></svg>
 <div class="hdr">
   <div class="brand">
     <img src="assets/logo-oscavlab.png" alt="osc[AV]lab" class="brand-logo">
     <div class="brand-sep"></div>
-    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.4</span></div>
+    <div class="brand-app"><b>EUCL</b><span>Seq Euclidean x4</span><span class="ver">v2.5</span></div>
   </div>
   <div class="sig" aria-hidden="true">ž</div>
   <div class="hdr-mid">
@@ -625,6 +652,7 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
       <input type="number" id="morphTimeVal" min="0" max="4" step="0.1" value="0" style="width:40px" oninput="morphTime=parseFloat(this.value)||0;document.getElementById('morphSlider').value=morphTime">
       <div class="unit">s</div>
     </div>
+    <label class="ld-mx" title="Si está marcado, al cambiar de preset también se carga su matriz MOD (CC). Desmárcalo para conservar la matriz actual."><input type="checkbox" id="chkLoadMx" onchange="setLoadMatrix(this.checked)"><i></i>CARGAR MOD</label>
     <div class="sep"></div>
     <div class="glob-lbl" style="border:none;padding:0">ACTIVO</div>
     <div class="active-name" id="activePresetName">—</div>
@@ -719,7 +747,7 @@ body{font-size:12px;background:var(--bg);color:var(--text);}
   <div class="fk"><span class="fkey">↑↓</span> BPM</div>
   <div class="fk"><span class="fkey">SHIFT ↑↓</span> ±10</div>
   <div class="fk"><span class="fkey">1–4</span> mute T1–T4</div>
-  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.4 — xužu / osc[AV]lab</div>
+  <div style="margin-left:auto">EUCL · Seq Euclidean x4 v2.5 — xužu / osc[AV]lab</div>
 </div>
 <script>
 'use strict';
@@ -1189,6 +1217,7 @@ function routeFX(fx,dest){
   if(!fx||!fxBus||!masterChain)return;
   try{fx.ret.disconnect();}catch(e){}
   fx.ret.connect(dest==='B'?fxBus.input:masterChain.preMaster);
+  if(fx.meter)fx.ret.connect(fx.meter);
 }
 function routeChannel(i){
   const b=buses[i];if(!b||!fxBus)return;
@@ -1238,6 +1267,7 @@ function initBuses(){
   fxBus={input:fxInput,makeupG,scKey,kickKey,comp:null,fallback:bypassComp};
   kickSidechain=scKey;
   makeupG.connect(preMaster);
+  const busMeter=ctx.createAnalyser();busMeter.fftSize=512;makeupG.connect(busMeter);fxBus.meter=busMeter;
   // hasta que cargue el worklet, el bus pasa por un compresor normal
   bypassComp.threshold.value=fb.thr;bypassComp.ratio.value=fb.ratio;bypassComp.attack.value=fb.atk;bypassComp.release.value=fb.rel;bypassComp.knee.value=6;
   fxInput.connect(bypassComp);bypassComp.connect(makeupG);
@@ -1264,9 +1294,10 @@ function initBuses(){
     const pre=ctx.createDelay(1.0);pre.delayTime.value=st.pre||0;
     const conv=ctx.createConvolver();conv.buffer=makeIR(ctx,revSec(key,st.size),key==='revC'?0.5:key==='revB'?0.25:0);
     const ret=ctx.createGain();ret.gain.value=st.mix;
+    const meter=ctx.createAnalyser();meter.fftSize=512;
     send.connect(pre);pre.connect(conv);conv.connect(ret);
-    ret.connect(st.dest==='B'?fxInput:preMaster);
-    return{send,pre,conv,ret};
+    ret.connect(st.dest==='B'?fxInput:preMaster);ret.connect(meter);
+    return{send,pre,conv,ret,meter};
   };
   gRevA=mkRev(GFX.revA,'revA');gRevB=mkRev(GFX.revB,'revB');gRevC=mkRev(GFX.revC,'revC');
   const dSend=ctx.createGain();dSend.gain.value=1;
@@ -1274,8 +1305,9 @@ function initBuses(){
   const dFB=ctx.createGain();dFB.gain.value=GFX.delay.feedback;
   const dRet=ctx.createGain();dRet.gain.value=GFX.delay.mix;
   dSend.connect(dNode);dNode.connect(dFB);dFB.connect(dNode);dNode.connect(dRet);
-  gDelay={send:dSend,node:dNode,fb:dFB,ret:dRet};
-  dRet.connect(GFX.delay.dest==='B'?fxInput:preMaster);
+  const dMeter=ctx.createAnalyser();dMeter.fftSize=512;
+  gDelay={send:dSend,node:dNode,fb:dFB,ret:dRet,meter:dMeter};
+  dRet.connect(GFX.delay.dest==='B'?fxInput:preMaster);dRet.connect(dMeter);
 
   // ── Canales ───────────────────────────────────────────────
   for(let i=0;i<4;i++){
@@ -2521,16 +2553,20 @@ function getPresetData(){
       notation:t.notation}))
   };
 }
+let loadMatrix=true;try{loadMatrix=localStorage.getItem('eucl.loadMatrix')!=='0';}catch(e){}
+function setLoadMatrix(on){loadMatrix=!!on;try{localStorage.setItem('eucl.loadMatrix',on?'1':'0');}catch(e){}}
 function applyPresetData(data){
   if(data.bpm){S.bpm=data.bpm;upd('bpmDisp',S.bpm);}
   if(data.swing!==undefined){setSwing(data.swing);}
   if(data.masterLv!==undefined){masterLv=data.masterLv;setMxMaster(masterLv);}
+  // MOD (matriz CC): opcional al cambiar de preset (casilla «MOD» de la barra de presets)
+  if(loadMatrix||data.__init){
   if(data.ccNums) data.ccNums.forEach((v,i)=>{ccNums[i]=v;});
-  // Clear matrix completely before applying
   Object.keys(MATRIX).forEach(k=>delete MATRIX[k]);
   Object.keys(MATRIX_MODE).forEach(k=>delete MATRIX_MODE[k]);
   if(data.matrix) Object.assign(MATRIX,data.matrix);
   if(data.matrixMode) Object.assign(MATRIX_MODE,data.matrixMode);
+  }
   // Global FX
   if(data.gfx){
     const g=data.gfx;
@@ -3181,7 +3217,7 @@ function buildFXUI(){
     +kn('gfxR'+L+'mix','RETURN',0,1,st.mix,0.01,fnp+'Mix(+this.value)',_pct(st.mix),'',1)
     +kn('gfxR'+L+'size','DECAY',0,1,st.size,0.001,fnp+'Size(+this.value)',_fmtSec(revSec(k,st.size)),'',REV_DEF[k])
     +kn('gfxR'+L+'pre','PRE',0,0.5,st.pre||0,0.001,'setGRevPre(\''+k+'\',+this.value)',Math.round((st.pre||0)*1000)+'ms','',0.02)
-    +'</div><div class="mod-f"><span>a</span>'+seg2('fxDest'+L,st.dest,fnp+'Dest','M','B','MASTER','COMP bus')+'</div></div>';
+    +'<div class="mtr fxm" id="mtrR'+L+'" title="Nivel del retorno"><i></i></div></div><div class="mod-f"><span>a</span>'+seg2('fxDest'+L,st.dest,fnp+'Dest','M','B','MASTER','COMP bus')+'</div></div>';
   let h='<div class="busrack">';
   h+='<div class="rack-sec"><div class="rack-h">RETORNOS</div><div class="rack-row">';
   h+=rev('revA','A','ROOM',GFX.revA,'setGRevA');
@@ -3195,7 +3231,7 @@ function buildFXUI(){
   h+=kn('gfxDtime','TIME',0,1,dlyNorm(d.time).toFixed(4),0.0005,'setGDlyKnob(+this.value)',_dlyFmt(d.time),'',dlyNorm(0.375).toFixed(4));
   h+=kn('gfxDfb','FDBK',0,0.95,d.feedback,0.01,'setGDlyFB(+this.value)',_pct(d.feedback),'',0.35);
   h+=kn('gfxDmix','RETURN',0,1,d.mix,0.01,'setGDlyMix(+this.value)',_pct(d.mix),'',1);
-  h+='</div><div class="mod-f"><span>a</span>'+seg2('fxDestD',d.dest,'setGDlyDest','M','B','MASTER','COMP bus')+'</div></div>';
+  h+='<div class="mtr fxm" id="mtrRD" title="Nivel del retorno"><i></i></div></div><div class="mod-f"><span>a</span>'+seg2('fxDestD',d.dest,'setGDlyDest','M','B','MASTER','COMP bus')+'</div></div>';
   h+='</div></div>';
   // COMP BUS
   h+='<div class="rack-sec"><div class="rack-h">COMP BUS <span class="rack-sub">lo que va a «B» se comprime; la llave SC puede ser el kick o un kick fantasma</span></div><div class="rack-row">';
@@ -3210,6 +3246,7 @@ function buildFXUI(){
   h+=kn('fbAtk','ATTACK',0.0001,0.2,fb.atk,0.0001,'setFBAtk(+this.value)',(fb.atk*1000).toFixed(1)+'ms','',0.003);
   h+=kn('fbRel','RELEASE',0.01,2,fb.rel,0.01,'setFBRel(+this.value)',Math.round(fb.rel*1000)+'ms','',0.25);
   h+=kn('fbMakeup','MAKEUP',0,12,fb.makeup,0.1,'setFBMakeup(+this.value)','+'+fb.makeup.toFixed(1)+'dB','',0);
+  h+='<div class="mtr fxm" id="mtrBus" title="Salida del COMP bus"><i></i></div>';
   h+='<div class="gr"><div class="gr-l">GR</div><div class="gr-bar"><i id="grBar"></i></div><div class="kg-v" id="grVal">0.0</div></div>';
   h+='</div></div></div></div>';
   // MASTER
@@ -3243,12 +3280,15 @@ function _arc(r,a0,a1){
   const [x0,y0]=p(a0),[x1,y1]=p(a1);const big=Math.abs(a1-a0)>180?1:0,sw=a1>a0?1:0;
   return 'M'+x0+' '+y0+' A'+r+' '+r+' 0 '+big+' '+sw+' '+x1+' '+y1;
 }
+function _knDots(bip){const p=a=>{const r=a*Math.PI/180;return'<circle class="kn-dot" r="0.95" cx="'+(20+19.6*Math.sin(r)).toFixed(2)+'" cy="'+(20-19.6*Math.cos(r)).toFixed(2)+'"/>';};
+  return p(-KA)+p(KA)+(bip?p(0):'');}
 function makeKnob(inp){
   if(inp.dataset.kn)return;inp.dataset.kn='1';
   const mn=+inp.min,mx=+inp.max,bip=mn<0&&mx>0;
   const el=document.createElement('div');el.className='kn';
-  el.innerHTML='<svg viewBox="0 0 40 40" aria-hidden="true"><path class="kn-trk" d="'+_arc(16,-KA,KA)+'"/><path class="kn-val" d=""/>'
-    +'<circle class="kn-cap" cx="20" cy="20" r="11.5"/><line class="kn-ptr" x1="20" y1="20" x2="20" y2="10.5"/><circle class="kn-mod" r="2" cx="20" cy="4"/></svg>';
+  el.innerHTML='<svg viewBox="0 0 40 40" aria-hidden="true">'+_knDots(bip)+'<path class="kn-trk" d="'+_arc(16,-KA,KA)+'"/><path class="kn-val" d=""/>'
+    +'<circle class="kn-sh" cx="20" cy="21.4" r="12"/><circle class="kn-cap" cx="20" cy="20" r="11.8"/><circle class="kn-rim" cx="20" cy="20" r="9.9"/>'
+    +'<line class="kn-ptr" x1="20" y1="8.9" x2="20" y2="14.6"/><circle class="kn-mod" r="2" cx="20" cy="4"/></svg>';
   inp.parentNode.insertBefore(el,inp);inp.classList.add('kn-src');
   if(inp.title)el.title=inp.title;
   const k={inp,el,mn,mx,bip,val:el.querySelector('.kn-val'),ptr:el.querySelector('.kn-ptr'),mod:el.querySelector('.kn-mod'),last:null,modN:null};
@@ -3293,6 +3333,8 @@ setInterval(()=>{
   if(!buses.length)return;
   buses.forEach((b,i)=>_mtr('mtr'+i,meterPeak(b.meter)));
   if(masterChain){const pk=meterPeak(masterChain.meter);_mtr('mtrM',pk);_mtr('mtrHdr',pk);}
+  [['mtrRA',gRevA],['mtrRB',gRevB],['mtrRC',gRevC],['mtrRD',gDelay]].forEach(([id,f])=>{if(f)_mtr(id,meterPeak(f.meter));});
+  if(fxBus)_mtr('mtrBus',meterPeak(fxBus.meter));
   const g=document.getElementById('grBar');if(g){const v=Math.min(24,compGR||0);g.style.transform='scaleX('+(v/24).toFixed(3)+')';upd('grVal',v.toFixed(1));}
 },60);
 
@@ -3463,7 +3505,8 @@ function buildHdrMaster(){const e=document.getElementById('hdrMaster');if(e)e.in
 // ── INIT ────────────────────────────────────────────────────
 // Estado inicial = parámetros del preset de la nube PC 45 ("24 jul 3"), copiados aquí.
 const INIT_DATA={"bpm":137,"gfx":{"lim":0,"mhp":0,"mlp":1,"sat":{"on":false,"amt":0},"revA":{"mix":1,"dest":"M"},"revB":{"mix":1,"dest":"M"},"revC":{"mix":1,"dest":"B"},"delay":{"mix":1,"dest":"B","sync":true,"time":0.957,"subDiv":"1/4","feedback":0},"fxbus":{"sc":false,"atk":0.003,"rel":0.25,"thr":0,"ratio":4,"makeup":0}},"swing":37,"ccNums":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"matrix":{"2,0":-28,"21,1":11,"35,0":16,"43,2":83,"45,2":56,"47,2":100,"28,10":-44,"67,10":94,"68,10":11},"tracks":[{"id":0,"kick":{"lpQ":0.7,"decay":0.39,"drive":0.1,"lpCut":177.55865278907652,"lpDec":0.04,"punch":true,"lpEnvAmt":8700,"pitchEnd":32,"sweepTime":0.052,"pitchStart":70},"midi":{"ch":10,"vel":100,"note":36},"burst":{"bite":true,"count":5,"subDiv":"1/16","bPulses":1,"bRotate":9,"subdivide":false},"muted":false,"pulses":6,"rndAmt":0,"rotate":0,"seqLen":16,"euSteps":16,"ratioIdx":4,"rndLocked":false,"probability":100},{"id":1,"midi":{"ch":10,"vel":80,"note":42},"burst":{"bite":false,"count":4,"subDiv":"1/16","bPulses":2,"bRotate":9,"subdivide":true},"hihat":{"open":false,"tone":4377.174805042958,"color":0,"decay":0.05,"flamTime":0.006,"openDecay":0.29,"flamLayers":4},"muted":false,"pulses":16,"rndAmt":0,"rotate":14,"seqLen":16,"euSteps":16,"ratioIdx":4,"rndLocked":false,"probability":100},{"id":2,"midi":{"ch":1,"vel":90,"note":60},"burst":{"bite":true,"count":5,"subDiv":"STEP","bPulses":5,"bRotate":2,"subdivide":false},"muted":false,"synth":{"lpQ":0.1,"decay":0.17,"glide":0.295,"lpCut":47.432980458179735,"lpDec":0.14,"lpRel":0.53,"scale":"chromatic","fmIndex":13,"fmRatio":4,"oscType":"square","release":0.31,"lpEnvAmt":1000,"rootNote":12},"pulses":8,"rndAmt":0,"rotate":18,"seqLen":16,"euSteps":23,"ratioIdx":4,"rndLocked":false,"melodyMode":"cursor","pitchCursor":127,"probability":100},{"id":3,"midi":{"ch":2,"vel":85,"note":60},"poly":{"lpQ":3.5,"decay":0.05,"lpAtk":0.005,"lpCut":45.720847753964634,"lpDec":0.42,"porta":0,"attack":0.008,"detune":15,"voices":5,"fmIndex":0,"fmRatio":1,"release":0.67,"lpEnvAmt":361,"unisonMode":true,"chordIntervals":[0,7,12]},"burst":{"bite":true,"count":2,"subDiv":"1/6","bPulses":2,"bRotate":3,"subdivide":false},"muted":true,"pulses":8,"rndAmt":0,"rotate":9,"seqLen":16,"euSteps":14,"notation":"b1  b3  b2 -  C4 - - B4 ","ratioIdx":4,"rndLocked":false,"probability":100}],"chSends":[{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":true,"bitDepth":16},{"sA":0,"sB":0,"sC":0,"sD":0,"bitOn":false,"bitDepth":16}],"masterLv":0.85,"matrixMode":{"3":"replace","19":"replace","37":"replace","39":"replace","40":"replace"}};
-try{applyPresetData(JSON.parse(JSON.stringify(INIT_DATA)));}catch(e){console.warn('INIT_DATA:',e);}
+{const c=document.getElementById('chkLoadMx');if(c)c.checked=loadMatrix;}
+try{applyPresetData(Object.assign(JSON.parse(JSON.stringify(INIT_DATA)),{__init:true}));}catch(e){console.warn('INIT_DATA:',e);}
 buildUI();
 buildHdrMaster();
 buildMixerUI();

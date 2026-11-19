@@ -4,6 +4,12 @@ Secuenciador euclídeo de 4 pistas (kick, hihat, mono FM, poly FM) con síntesis
 
 **App para Mac v0.2** (motor Chrome: ajustes de salida de audio y buffer, puertos virtuales "EUCL", timing de tiempo real): ver [desktop/](desktop/README.md) y la [guía](desktop/docs/GUIA.md). La versión anterior con Safari/WKWebView queda en [app/](app/README.md).
 
+## v2.5 (2026-11-19)
+- Casilla «CARGAR MOD» en presets: si está desmarcada, cambiar de preset conserva la matriz MOD actual.
+- Colores de pista: T1 ámbar, T2 oliva, T3 pino, T4 verde fosforescente.
+- Perillas rediseñadas (tapa con sombra, raya indicadora, puntos de mín/máx) y divisores entre secciones más marcados.
+- Meters en cada retorno (room/hall/cathedral/delay) y a la salida del COMP bus; meters de canal más altos.
+
 ## v2.4 (2026-11-19)
 - PISTAS: retornos (room/hall/cathedral/delay), COMP bus y MASTER en una columna a la derecha de las pistas; todo en una pantalla a 1920×1080.
 - La pestaña 2 queda solo para MOD (matriz CC + referencia).
